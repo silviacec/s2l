@@ -11,9 +11,9 @@
 </template>
 
 <script>
-export default {
-  name: "Project",
-};
+  export default {
+    name: "Project",
+  };
 </script>
 
 <style lang="css" scoped>

@@ -13,6 +13,7 @@
 import Pitch from "@/components/Pitch.vue";
 import Project from "@/components/Project.vue";
 
+
 export default {
   name: "Home",
   components: {

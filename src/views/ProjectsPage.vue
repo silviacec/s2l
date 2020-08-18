@@ -1,13 +1,48 @@
 <template>
   <div class="projets">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <Project />
-    <Project />
-    <Project />
-    <Project />
-    <Project />
-    <Project />
-    <Project />
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
+    <div class="">
+      <Project />
+        <router-link to="/SinglePage">
+          <button>Voir ce projet en détail</button>
+        </router-link>
+    </div>
   </div>
 </template>
 
