@@ -1,18 +1,18 @@
 <template>
-  <div class="home">
+  <div class="contact">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <Pitch />
+    <Contact />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Pitch from "@/components/Pitch.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
-  name: "Home",
+  name: "ContactPage",
   components: {
-    Pitch
+    Contact
   }
 };
 </script>
