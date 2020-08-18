@@ -9,9 +9,9 @@
 <script>
 export default {
   name: "Pitch",
-  props: {
-    text: String
-  }
+  // props: {
+  //   text: String
+  // }
 };
 </script>
 

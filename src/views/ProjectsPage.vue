@@ -2,6 +2,12 @@
   <div class="projets">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <Project />
+    <Project />
+    <Project />
+    <Project />
+    <Project />
+    <Project />
+    <Project />
   </div>
 </template>
 
