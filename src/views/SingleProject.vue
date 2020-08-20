@@ -1,26 +1,52 @@
 <template lang="html">
   <div class="">
-    <Project>
-    <p>Les besoins financier / Besoins pour le développement du projet</p>
-    <p>Prise de participation proposé par l'entrepreneur</p>
-    <p> La rentabilité attendue, proposée par l'entrepreneur </p>
-    <p>Une description du parcours de l'entrepreneur </p>
-    <p>Une description du projet plus détaillé, son historique ses plus value son marché ses cibles etc</p>
-    </Project>
+
+    <h2>{{projetSelectionne.title}}</h2>
+
+    <h3>Crée par {{projetSelectionne.etpName}}</h3>
+    <img :src="projetSelectionne.photo" alt="Photo de notre projet">
+    <h4>{{projetSelectionne.type}}</h4>
+    <p>{{projetSelectionne.shortPrez}}</p>
+    <p>{{projetSelectionne.needs}} €</p>
+    <p>{{projetSelectionne.participation}}</p>
+    <p>{{projetSelectionne.rentability}}</p>
+    <p>{{projetSelectionne.etpCurriculum}}</p>
+    <p>{{projetSelectionne.longPrez}}</p>
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Project from "@/components/Project.vue";
+// import Project from "@/components/Project.vue";
+import {entreprises} from "../data.js";
 
 export default {
   name: "SingleProject",
 
-  components: {
-    Project
+  // components: {
+  //   Project
+  // },
+
+  data() {
+    return {
+      entreprises: entreprises,
+      idProjetSelectionne: 0,
+      projetSelectionne: {},
+    };
+  },
+
+  mounted() {
+    // On récupère le params id (qui est dans l'url) grâce à l'objet $route
+    this.idProjetSelectionne = this.$route.params.id;
+
+    // On sélectionne l'utilisateur qui a le même id que le params récupéré dans $route
+    this.projetSelectionne = this.entreprises.find(
+      (entreprise) => entreprise.id == this.idProjetSelectionne
+    );
   },
 };
+
 </script>
 
 

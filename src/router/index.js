@@ -37,10 +37,16 @@ const routes = [
     component: ContactPage
   },
   {
-    path: "/SingleProject",
+    path: "/SingleProject/:id",
     name: "SingleProject",
     component: SingleProject
   },
+  // {
+  //   path: "/users/:id",
+  //   name: "UserDetails",
+  //   component: UserDetails,
+  //   }, 
+
 ];
 
 const router = new VueRouter({

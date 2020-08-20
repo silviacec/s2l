@@ -2,16 +2,18 @@
 <div class="">
 
 
-  <div class="projets" v-for="(entreprise) in entreprises" :key="entreprise.id">
+  <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
     <h1>{{entreprise.title}}</h1>
     <h3>Crée par {{entreprise.etpName}}</h3>
-    <!-- <img src="" alt="Une photo du porteur du projet et le logo de l'entreprise"> -->
+    <img :src="entreprise.photo" alt="Photo de notre projet">
     <h4>{{entreprise.type}}</h4>
     <p>{{entreprise.shortPrez}}</p>
     <p>{{entreprise.needs}} €</p>
-    <router-link to="/SinglePage">
+
+    <button @click="voirProjet(entreprise.id)">Voir ce projet en détail</button>
+    <!-- <router-link to="/SinglePage">
       <button>Voir ce projet en détail</button>
-    </router-link>
+    </router-link> -->
   </div>
   </div>
 <!-- </div> -->
@@ -30,6 +32,12 @@ export default {
       entreprises : entreprises,
     };
   },
+
+  methods: {
+    voirProjet(identifiant) {
+      this.$router.push({ path: `/SingleProject/${identifiant}` });
+    }
+  }
 
   // components: {
   //   Project
