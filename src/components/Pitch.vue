@@ -8,7 +8,7 @@
               Nous vous proposons un panel d'entrepreneurs qui ont besoin de levée de petit montant pour se développer.
               Ils ont déjà validé leurs marché, ont des clients et sont prêt à décoller ! <br>
               Vous apportez votre capital à celui des entrepreneurs, votre expertise si vous en avez, et vous participez au développement local en recevant une rémunération annuelle.
-              <a href="#" class="myButton"> Plus de détails </a>
+              <router-link class="myButton" to="/about">Plus de détails</router-link>
 
               </p>
         </div>
@@ -35,8 +35,9 @@ export default {
       grid-gap: 2rem;
       grid-template-columns: repeat(5, 150px);
       grid-template-rows: repeat(5, 100px);
-      position: sticky;
+      /* position: sticky; */
       color: #888888;
+      text-align: justify;
 }
 
 .accueil h2{
