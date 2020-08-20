@@ -15,3 +15,9 @@ export default {
   }
 };
 </script>
+
+<style media="screen">
+  .contact {
+    background-color: #f1f2f2;
+  }
+</style>
