@@ -1,15 +1,10 @@
 <template>
   <div id="app">
     <!-- router vue qui prend en name le surnom du header et un autre du footer -->
+    <router-view name="navbar" />
+    <router-view></router-view>
+    <router-view name="footer" />
 
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/ProjectsPage">Projets</router-link>  |
-      <router-link to="/about">About</router-link>  |
-      <router-link to="/ContactPage">Contact</router-link>
-    </div>
-
-    <router-view />
   </div>
 </template>
 
@@ -24,22 +19,7 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
-*{
-      box-sizing: border-box;
-}
 
 html{
       margin: 0;
