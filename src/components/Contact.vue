@@ -58,10 +58,10 @@
   color: #A6905F;
   } */
 
-  form {
-  /* margin-left: 10px; */
-  /* width: 50%; */
-  }
+  /* form {
+  margin-left: 10px;
+  width: 50%;
+  } */
 
   input, textarea {
   display: block;
