@@ -3,7 +3,7 @@
     <!-- router vue qui prend en name le surnom du header et un autre du footer -->
     <router-view name="navbar" />
     <router-view></router-view>
-    <router-view name="footer" />
+    <!-- <router-view name="footer" /> -->
 
   </div>
 </template>

@@ -19,9 +19,6 @@
 <script>
 export default {
   name: "Pitch",
-  // props: {
-  //   text: String
-  // }
 };
 </script>
 
@@ -71,7 +68,7 @@ export default {
     	display:inline-block;
     	cursor:pointer;
       color: #888888;
-    	font-family:Arial;
+    	/* font-family:Arial; */
     	font-size:17px;
     	padding:7px 25px;
     	text-decoration:none;

@@ -7,8 +7,9 @@ import SingleProject from "../views/SingleProject.vue";
 import Navbar from "../layouts/Navbar.vue";
 import About from "../views/About.vue";
 import Footer from "../layouts/Footer.vue";
-
-// j'importe header et footer qui sont dans layout Header.vue
+import ContactAccueil from "../views/contactAccueil.vue";
+import ContactEntrepreneur from "../views/ContactEntrepreneur.vue";
+import ContactInvestisseur from "../views/ContactInvestisseur.vue";
 
 
 Vue.use(VueRouter);
@@ -40,6 +41,21 @@ const routes = [
     path: "/ContactPage",
     name: "ContactPage",
     components: {default: ContactPage, navbar: Navbar, footer: Footer},
+  },
+  {
+    path: "/ContactAccueil",
+    name: "ContactAccueil",
+    components: {default: ContactAccueil, navbar: Navbar, footer: Footer},
+  },
+  {
+    path: "/ContactEntrepreneur",
+    name: "ContactEntrepreneur",
+    components: {default: ContactEntrepreneur, navbar: Navbar, footer: Footer},
+  },
+  {
+    path: "/ContactInvestisseur",
+    name: "ContactInvestisseur",
+    components: {default: ContactInvestisseur, navbar: Navbar, footer: Footer},
   },
   {
     path: "/SingleProject/:id",
