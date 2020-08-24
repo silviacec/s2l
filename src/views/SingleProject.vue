@@ -1,5 +1,6 @@
 <template lang="html">
-  <div class="">
+  <div>
+  <div v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
 
     <h2>{{projetSelectionne.title}}</h2>
 
@@ -12,7 +13,7 @@
     <p>{{projetSelectionne.rentability}}</p>
     <p>{{projetSelectionne.etpCurriculum}}</p>
     <p>{{projetSelectionne.longPrez}}</p>
-
+  </div>
   </div>
 </template>
 
@@ -51,4 +52,14 @@ export default {
 
 
 <style lang="css" scoped>
+
+.rose {
+  background-color: pink;
+}
+.bleu {
+  background-color: blue;
+}
+.vert {
+  background-color: green;
+}
 </style>
