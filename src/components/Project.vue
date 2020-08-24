@@ -37,4 +37,10 @@
 </script>
 
 <style lang="css" scoped>
+  .fiche-projet {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+  }
 </style>

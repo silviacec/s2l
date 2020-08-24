@@ -1,13 +1,14 @@
 <template>
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <div><Steps /></div>
+    <!-- <div><Steps /></div> -->
     <!-- <Pitch /> -->
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
-      <div v-if="entreprise.firstPage" >
+      <!-- <div v-if="entreprise.firstPage" > -->
         <Project :entreprise="entreprise"></Project>
+      <!-- </div> -->
     </div>
-    </div>
+      <!-- <Rounds /> -->
   </div>
 </template>
 
@@ -15,18 +16,21 @@
 // @ is an alias to /src
 // import Pitch from "@/components/Pitch.vue";
 import Project from "@/components/Project.vue";
-import Steps from "@/components/Steps.vue";
+// import Steps from "@/components/Steps.vue";
 import {entreprises} from "../data.js";
+// import Rounds from "@/components/Rounds.vue";
 
 export default {
   name: "Home",
   components: {
-    Steps, Project
+    Project
   },
 
   data() {
     return {
-      entreprises : entreprises,
+      entreprises : entreprises.filter(function(entreprise) {
+        return entreprise.firstPage
+      }),
     };
   },
 

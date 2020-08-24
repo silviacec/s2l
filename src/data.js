@@ -58,7 +58,7 @@ export const entreprises = [
   {
     id: 5,
     title: 'Coco',
-    photo: "http://lorempixel.com/80/80/people/4",
+    photo: "http://lorempixel.com/80/80/people/5",
     etpName: 'Calou Cali',
     type: 'écologique',
     shortPrez: 'blablabla',
@@ -72,7 +72,7 @@ export const entreprises = [
   {
     id: 6,
     title: 'Indesign',
-    photo: "http://lorempixel.com/80/80/people/4",
+    photo: "http://lorempixel.com/80/80/people/6",
     etpName: 'Karl Abou',
     type: 'éducatif',
     shortPrez: 'blablabla',
