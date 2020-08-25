@@ -1,89 +1,75 @@
 <template lang="html">
-  <!-- <div>
-  <div v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-
-    <h2>{{projetSelectionne.title}}</h2>
-
-    <h3>Crée par {{projetSelectionne.etpName}}</h3>
-    <img :src="projetSelectionne.photo" alt="Photo de notre projet">
-    <h4>{{projetSelectionne.type}}</h4>
-    <p>{{projetSelectionne.shortPrez}}</p>
-    <p>{{projetSelectionne.needs}} €</p>
-    <p>{{projetSelectionne.participation}}</p>
-    <p>{{projetSelectionne.rentability}}</p>
-    <p>{{projetSelectionne.etpCurriculum}}</p>
-    <p>{{projetSelectionne.longPrez}}</p>
-  </div>
-  </div> -->
-
   <div>
-  <div class="wrapper">
-    <div class="profile">
-      <div class="profile_img_info" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-        <div class="img">
-            <img :src="showPhoto1" alt="Photo de notre projet">
-        </div>
-        <div class="info">
-          <p class="name"> {{projetSelectionne.etpName}} </p>
-          <p class="place">{{projetSelectionne.shortPrez}}<span>
-            <!-- <i class=""></i> -->
-          </span> Paris </p>
-        </div>
-      </div>
-      <div class="profile_skills" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-        <div class="skills">
-          <p> {{projetSelectionne.title}} </p>
-          <ul>
-            <li><span class="icon">
+    <div class="wrapper">
+      <div class="profile">
+        <div class="profile_img_info"
+              v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
+          <div class="img">
+              <img :src="showPhoto1" alt="Photo de notre projet">
+          </div>
+          <div class="info">
+            <p class="name"> {{projetSelectionne.etpName}} </p>
+            <p class="place">{{projetSelectionne.shortPrez}}<span>
               <!-- <i class=""></i> -->
-            </span>
+            </span> Paris </p>
+          </div>
+        </div>
+        <div class="profile_skills"
+              v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
+          <div class="skills">
+            <p> {{projetSelectionne.title}} </p>
+            <ul>
+              <li>
+                <span class="icon"><!-- <i class=""></i> --></span>
                 <span class="title"> {{projetSelectionne.etpCurriculum}}  </span>
-            </li>
-            <li><span class="icon"></span>
-                <span class="title"> {{projetSelectionne.longPrez}}</span>
-            </li>
-            <li><span class="icon"></span>
+              </li>
+              <li>
+                <span class="icon"></span>
+                <span class="title">{{projetSelectionne.longPrez}}</span>
+              </li>
+              <li>
+                <span class="icon"></span>
                 <span class="title"> Cliquez ici, pour plus de détails </span>
-            </li>
-          </ul>
-        </div>
-        <div class="tags_wrap">
-          <span class="tag"> {{projetSelectionne.type}} </span>
-          <span class="tag"> océans </span>
-          <span class="tag"> manta </span>
-          <span class="tag"> voilier </span>
-        </div>
-      </div>
-    </div>
-    <div class="profile_counts" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-      <div class="profile_counts_wrap">
-        <div class="item">
-              <div class="icon">
-                <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
-              </div>
-              <div class="title"> {{projetSelectionne.needs}} € </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tags_wrap">
+            <span class="tag">{{projetSelectionne.type}}</span>
+            <span class="tag">{{projetSelectionne.tag1}}</span>
+            <span class="tag">{{projetSelectionne.tag2}}</span>
+            <span class="tag">{{projetSelectionne.tag3}}</span>
+          </div>
         </div>
       </div>
-      <div class="profile_counts_wrap">
-        <div class="item">
-              <!-- <div class="icon"><i class="fas fa-thumbs-up" aria-hidden="true"></div> -->
-              <div class="title"> {{projetSelectionne.participation}} € </div>
+      <div class="profile_counts" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
+        <div class="profile_counts_wrap">
+          <div class="item">
+                <div class="icon">
+                  <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
+                </div>
+                <div class="title"> {{projetSelectionne.needs}} € </div>
+          </div>
         </div>
-      </div>
-      <div class="profile_counts_wrap">
-        <div class="item">
-              <div class="icon">
-                <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
-              </div>
-              <div class="title"> {{projetSelectionne.rentability}} € </div>
+        <div class="profile_counts_wrap">
+          <div class="item">
+                <!-- <div class="icon"><i class="fas fa-thumbs-up" aria-hidden="true"></div> -->
+                <div class="title"> {{projetSelectionne.participation}} € </div>
+          </div>
+        </div>
+        <div class="profile_counts_wrap">
+          <div class="item">
+                <div class="icon">
+                  <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
+                </div>
+                <div class="title"> {{projetSelectionne.rentability}} € </div>
 
+          </div>
         </div>
       </div>
     </div>
+    <div class="video-projet">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yXEMJSL5rKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-  <div class="video-projet">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/yXEMJSL5rKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 </div>
 </template>
 
