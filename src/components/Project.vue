@@ -35,19 +35,19 @@
       <div class="table">
         <div class="project_images">
           <div class="1">
-          <figure class="project_image odd first">
-            <img alt="img-01.jpg" :src="entreprise.photo1">
-          </figure>
+            <figure class="project_image odd first">
+                <img alt="img-01.jpg" :src="showPhoto1">
+    </figure>
           <figure class="project_image even first">
-            <img alt="img-03.jpg" :src="entreprise.photo3">
+            <img alt="img-03.jpg" :src="showPhoto3" />
           </figure>
         </div>
         <div class="2">
           <figure class="project_image odd">
-            <img alt="img-02.jpg" :src="entreprise.photo2">
+            <img alt="img-02.jpg" :src="showPhoto2" />
           </figure>
           <figure class="project_image even">
-            <img alt="img-04.jpg" :src="entreprise.photo4">
+            <img alt="img-04.jpg" :src="showPhoto4" />
           </figure>
           </div>
         </div>
@@ -69,6 +69,20 @@
     //   shortPrez: String,
     //   needs: Number,
     // }
+    computed: {
+    showPhoto1 () {
+      return require('../assets/' + this.entreprise.photo1)
+    },
+    showPhoto2() {
+      return require('../assets/' + this.entreprise.photo2)
+    },
+    showPhoto3() {
+      return require('../assets/' + this.entreprise.photo3)
+    },
+    showPhoto4() {
+      return require('../assets/' + this.entreprise.photo4)
+    }
+  },
     methods: {
       voirProjet(identifiant) {
         this.$router.push({ path: `/SingleProject/${identifiant}` });
