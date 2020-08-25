@@ -2,6 +2,7 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <Steps />
+    <Title />
     <Pitch />
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <!-- <div v-if="entreprise.firstPage" > -->
@@ -17,13 +18,14 @@
 import Pitch from "@/components/Pitch.vue";
 import Project from "@/components/Project.vue";
 import Steps from "@/components/Steps.vue";
+import Title from "@/components/Title.vue";
 import {entreprises} from "../data.js";
 // import Rounds from "@/components/Rounds.vue";
 
 export default {
   name: "Home",
   components: {
-    Project, Pitch, Steps
+    Project, Pitch, Steps, Title
   },
 
   data() {

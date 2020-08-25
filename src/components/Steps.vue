@@ -29,7 +29,8 @@
 
 <script>
 export default {
-}
+  name: "Steps",
+};
 </script>
 
 <style lang="css" scoped>
