@@ -9,9 +9,11 @@
           </div>
           <div class="info">
             <p class="name"> {{projetSelectionne.etpName}} </p>
-            <p class="place">{{projetSelectionne.shortPrez}}<span>
-              <!-- <i class=""></i> -->
-            </span> Paris </p>
+            <p class="place">{{projetSelectionne.shortPrez}}
+              <!-- <span>
+              <i class=""></i>
+            </span> -->
+            Paris </p>
           </div>
         </div>
         <div class="profile_skills"
@@ -19,17 +21,19 @@
           <div class="skills">
             <p> {{projetSelectionne.title}} </p>
             <ul>
-              <li>
-                <span class="icon"><!-- <i class=""></i> --></span>
+              <!-- <li>
+                <span class="icon">
+                  <i class=""></i>
+                </span>
                 <span class="title"> {{projetSelectionne.etpCurriculum}}  </span>
-              </li>
+              </li> -->
               <li>
-                <span class="icon"></span>
+                <!-- <span class="icon"></span> -->
                 <span class="title">{{projetSelectionne.longPrez}}</span>
               </li>
               <li>
                 <span class="icon"></span>
-                <span class="title"> Cliquez ici, pour plus de détails </span>
+                <!-- <span class="title"> Cliquez ici, pour plus de détails </span> -->
               </li>
             </ul>
           </div>
@@ -44,16 +48,16 @@
       <div class="profile_counts" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
         <div class="profile_counts_wrap">
           <div class="item">
-                <div class="icon">
-                  <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
-                </div>
-                <div class="title"> {{projetSelectionne.needs}} € </div>
+                <!-- <div class="icon">
+                  <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+                </div> -->
+                <div class="title"> Les besoins de ce projet : {{projetSelectionne.needs}} € </div>
           </div>
         </div>
         <div class="profile_counts_wrap">
           <div class="item">
                 <!-- <div class="icon"><i class="fas fa-thumbs-up" aria-hidden="true"></div> -->
-                <div class="title"> {{projetSelectionne.participation}} € </div>
+                <div class="title"> Le montant que vous pouvez investir : {{projetSelectionne.participation}} € </div>
           </div>
         </div>
         <div class="profile_counts_wrap">
@@ -61,15 +65,21 @@
                 <div class="icon">
                   <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
                 </div>
-                <div class="title"> {{projetSelectionne.rentability}} € </div>
+                <div class="title"> Le montant que cet investissement va vous rapporter annuellement à terme : {{projetSelectionne.rentability}} € </div>
 
           </div>
         </div>
       </div>
+      <div class="photo_profile ">
+        <img :src="showPhotoProfile" alt="" style="width: 700px; height: auto; margin: 25px; border-radius: 5px;">
+        <p class="cv">
+          {{projetSelectionne.etpCurriculum}}
+        </p>
+      </div>
     </div>
-    <div class="video-projet">
+    <!-- <div class="video-projet">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/yXEMJSL5rKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
+  </div> -->
 </div>
 </template>
 
@@ -88,6 +98,9 @@ export default {
   computed: {
   showPhoto1 () {
     return require('../assets/' + this.projetSelectionne.photo1)
+  },
+  showPhotoProfile () {
+    return require('../assets/' + this.projetSelectionne.photo_profile)
   }
 },
 
@@ -119,7 +132,7 @@ export default {
       width: 650px;
       height: auto;
       position: absolute;
-      top: 150%;
+      top: 100%;
       left: 30%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -134,7 +147,7 @@ export default {
       margin-right: 25px;
 }
 
-.wrapper .profile .profile_img_info{
+.wrapper .profile .profile_img_info {
       display: flex;
       /* background: #fff; */
       border-radius: 10px;
@@ -142,7 +155,7 @@ export default {
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
 }
 
-.wrapper .profile .profile_img_info .img{
+.wrapper .profile .profile_img_info .img {
       width: 125px;
 }
 
@@ -268,6 +281,15 @@ export default {
   }
 }
 
+.cv {
+  width: 700px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 5px;
+  background-color: #f9f634;
+  border-radius: 10px;
+}
+
 .vert {
   background-color: rgb(198, 227, 215);
 }
@@ -280,4 +302,5 @@ export default {
 .gris {
   background-color: rgb(224, 224, 224);
 }
+
 </style>
