@@ -108,15 +108,7 @@
   margin-right: 6em;
   }
 
-  .project_description {
-  position: relative;
-  top: 50%;
-  right: -160px;
-  margin-top: -100px;
-  width: 210px;
-  background: #fff;
-  z-index: 4;
-  }
+
 
   .project_description_cont{ /* le cadre par dessus les 4 images*/
   position: relative;
@@ -268,7 +260,7 @@
   }
 
   .project_description {
-  position: absolute;
+  /* position: absolute; */
   top: 60%;
   right: -160px;
   margin-top: -100px;
@@ -278,6 +270,16 @@
   font-size: small;
   }
 
+  /* .project_description {
+  position: relative;
+  top: 50%;
+  right: -160px;
+  margin-top: -100px;
+  width: 210px;
+  background: #fff;
+  z-index: 4;
+  } */
+  
   .project_description_cont{ /* le cadre par dessus les 4 images*/
   position: relative;
   padding: 25px;
