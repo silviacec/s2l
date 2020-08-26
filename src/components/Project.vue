@@ -1,63 +1,54 @@
 <template lang="html">
-
-
-  <!-- <div class="fiche-projet" v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social' }" >
-    <h1>{{entreprise.title}}</h1>
-    <h3>Un projet créé par {{entreprise.etpName}}</h3>
-    <img :src="entreprise.photo" alt="Photo de notre projet" />
-    <h4>{{entreprise.type}}</h4>
-    <p>{{entreprise.shortPrez}}</p>
-    <p>{{entreprise.title}} a besoin de {{entreprise.needs}} € !</p>
-
-    <button @click="voirProjet(entreprise.id)">Voir ce projet en détail</button>
-
-  </div> -->
-  <section v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social', gris: entreprise.type === 'tech' }" id="project_ca-commence-par-moi_content" class="content_part content_project" data-color="#C6E3D7" style="height: 44.5em;">
+  <section
+        v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social', gris: entreprise.type === 'tech' }"
+        class="content content_part content_project"
+        data-color="#C6E3D7" style="height: 44.5em;">
 
     <div class="content_inner">
-
-      <article id="project_ca-commence-par-moi_description" class="project_description">
-
-        <div class="project_description_cont">
-          <h1 class="project_title" style="border-color:#C6E3D7;">
-            {{entreprise.title}}
-          </h1>
-          <div class="project_text">
-            <p>{{entreprise.shortPrez}}
-              <button @click="voirProjet(entreprise.id)">Voir ce projet en détail</button>
-          community launched by {{entreprise.etpName}} {{entreprise.littlePrez}} </p>
-          </div>
-          </div>
-
+      <article class="description project_description">
+      <div class="project_description_cont">
+        <h1 class="project_title" style="border-color:#C6E3D7;">
+          {{entreprise.title}}
+        </h1>
+        <div class="project_text">
+          <p>
+            {{entreprise.shortPrez}} <br>
+            Un projet né d'une idée de {{entreprise.etpName}}
+            <button @click="voirProjet(entreprise.id)">Clique ici</button>
+            {{entreprise.littlePrez}}
+          </p>
+        </div>
+      </div>
       </article>
 
-      <div id="project_ca-commence-par-moi_number" class="project_number">{{entreprise.id}}</div>
+      <div class="project_number">{{entreprise.id}}
+      </div>
+
       <div class="table">
         <div class="project_images">
           <div class="1">
             <figure class="project_image odd first">
-                <img alt="img-01.jpg" :src="showPhoto1">
-    </figure>
-          <figure class="project_image even first">
-            <img alt="img-03.jpg" :src="showPhoto3" />
-          </figure>
-        </div>
-        <div class="2">
-          <figure class="project_image odd">
-            <img alt="img-02.jpg" :src="showPhoto2" />
-          </figure>
-          <figure class="project_image even">
-            <img alt="img-04.jpg" :src="showPhoto4" />
-          </figure>
+              <img alt="img-01.jpg" :src="showPhoto1" />
+            </figure>
+            <figure class="project_image even first">
+              <img alt="img-03.jpg" :src="showPhoto3" />
+            </figure>
+          </div>
+          <div class="2">
+            <figure class="project_image odd">
+              <img alt="img-02.jpg" :src="showPhoto2" />
+            </figure>
+            <figure class="project_image even">
+              <img alt="img-04.jpg" :src="showPhoto4" />
+            </figure>
           </div>
         </div>
       </div>
-
     </div>
-    </section>
-  </template>
+  </section>
+</template>
 
-  <script>
+<script>
 
   export default {
     name: "Project",
@@ -90,10 +81,9 @@
     },
   };
 
+</script>
 
-  </script>
-
-  <style lang="css" scoped>
+<style lang="css" scoped>
   /* .fiche-projet {
     border: 1px solid grey;
     border-radius: 5px;
@@ -102,9 +92,9 @@
   } */
   /* ------PAGE DEV-SPACE --- présentation des entreprises/ ONG / associations --- */
   /* -------------------------------------------------------------------------------*/
-  #main{
+  /* #main{
   background-color: white;
-  }
+  } */
 
   .paragraphs {
   padding-bottom: 2em;
@@ -156,12 +146,13 @@
   margin: 2em 0em;
   }
 
-  #project_annonay_content img,
-  #project_ca-commence-par-moi_content img,
-  #project_cacao-forest_content img,
+  /* #project_annonay_content img, */
+  .content img,
+  /* #project_cacao-forest_content img,
   #project_please-come-inside_content img,
-  #project_away-hostel-and-coffee-shop_content img,
-  #main img{
+  #project_away-hostel-and-coffee-shop_content img, */
+  /* #main img */
+  {
 
   padding: 0 0;
   }
@@ -186,35 +177,35 @@
   }
 
   .project_images {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-  z-index: 3;
-  margin-left: 5em;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 3;
+    margin-left: 5em;
   }
 
 
   .project_image img{
-  width:28em;
-  padding: 0;
+    width:28em;
+    padding: 0;
   }
 
   .project_image.first { /*pour avoir de lespace entre les 4 images*/
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .project_image.even {
-  margin-left: 20px;
+    margin-left: 20px;
   }
 
   .project_image {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 26em;
-  height: 18em;
-  border: 10px solid #fff;
-  overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 26em;
+    height: 18em;
+    border: 10px solid #fff;
+    overflow: hidden;
   }
 
   figure {
@@ -222,12 +213,12 @@
   }
 
   /* article par dessus le tableau */
-  #project_ca-commence-par-moi_description{
+  .description{
   display: block;
   /* margin-top: -75em; */
   margin-right: 20em;
   }
-  #project_annonay_description{
+  /* #project_annonay_description{
   display: block;
   margin-top: 51em;
   margin-right: 20em;
@@ -243,7 +234,7 @@
   display: block;
   margin-top: 166em;
   margin-right: 20em;
-  }
+  } */
   /*
   #project_away-hostel-and-coffee-shop_description{
   display: block;
@@ -252,12 +243,12 @@
   }*/
 
   @media screen and (max-width:864px){
-  #project_ca-commence-par-moi_description{
+  .description{
     display: block;
     margin-top: -75em;
     margin-right: 5em;
   }
-  #project_annonay_description{
+  /* #project_annonay_description{
     display: block;
     margin-top: -20em;
     margin-right: 6em;
@@ -273,7 +264,7 @@
     display: block;
     margin-top: 96em;
     margin-right: 6em;
-  }
+  } */
   }
 
   .project_description {
@@ -323,4 +314,4 @@
   .gris {
     background-color: rgb(224, 224, 224);
   }
-  </style>
+</style>
