@@ -4,13 +4,18 @@
     <Steps />
     <Title />
     <Pitch />
-    <Types />
+    <!-- <Types /> -->
+    <Quote />
     <br>
-    <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
+    <div class="">
+
+    <!-- <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id"> -->
       <!-- <div v-if="entreprise.firstPage" > -->
-        <Project :entreprise="entreprise"></Project>
+        <!-- <Project :entreprise="entreprise"></Project> -->
       <!-- </div> -->
-    </div>
+    <!-- </div> -->
+
+  </div>
       <!-- <Rounds /> -->
   </div>
 </template>
@@ -18,10 +23,11 @@
 <script>
 // @ is an alias to /src
 import Pitch from "@/components/Pitch.vue";
-import Project from "@/components/Project.vue";
+// import Project from "@/components/Project.vue";
 import Steps from "@/components/Steps.vue";
 import Title from "@/components/Title.vue";
-import Types from "@/components/Types.vue";
+// import Types from "@/components/Types.vue";
+import Quote from "@/components/Quote.vue";
 
 import {entreprises} from "../data.js";
 // import Rounds from "@/components/Rounds.vue";
@@ -29,7 +35,7 @@ import {entreprises} from "../data.js";
 export default {
   name: "Home",
   components: {
-    Project, Pitch, Steps, Title, Types
+    Pitch, Steps, Title, Quote
   },
 
   data() {
