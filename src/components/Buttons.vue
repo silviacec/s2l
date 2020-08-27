@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'Rounds',
+  name: 'Buttons',
 
   methods: {
     voirContactEnt() {
@@ -36,17 +36,19 @@ export default {
 }
 .crcl_bleu_1, .crcl_bleu_2{
   /* display:table-cell; */
-  vertical-align:middle;
-  background: #46b7c1;
-  border-radius: 50%;
+  vertical-align: middle;
+  background: #9af1dc;
+  border-radius: 10%;
   width: 300px;
   height: 300px;
-  line-height:1em;
-  border: 10px solid rgba(255,255,255,0.7);
-  color: white;
+  line-height: 1em;
+  border: 2px solid rgb(158 202 202);
+  color: #3b3d69;
   text-align: center;
   font-size: 1.2em;
-  padding: 10px;
+  padding: 30px;
+  margin: 20px 80px;
+  box-shadow: -9px 14px 20px 0px #000000b3;
   }
   .crcl_bleu_1 h5 {
     margin-top: 50px;
@@ -56,12 +58,12 @@ export default {
   }
   .ent {
     font-weight: bold;
-    color: #e7f315;
+    color: #696d23;
     font-size: 1.5em;
   }
   .inv {
     font-weight: bold;
-    color: red;
+    color: #bb381b;
     font-size: 1.5em;
   }
 </style>

@@ -1,18 +1,18 @@
 <template>
   <div class="contact">
-    <Rounds></Rounds>
+    <Buttons></Buttons>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 
-import Rounds from "@/components/Rounds.vue";
+import Buttons from "@/components/Buttons.vue";
 
 export default {
   name: "ContactPage",
   components: {
-    Rounds
+    Buttons
   }
 };
 </script>
@@ -20,5 +20,6 @@ export default {
 <style media="screen">
   .contact {
     background-color: #f1f2f2;
+    padding: 100px;
   }
 </style>
