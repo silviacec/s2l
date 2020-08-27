@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
 
     <Title />
+
     <Steps />
+
     <Pitch />
 
     <Types />
-
 
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <div v-if="entreprise.firstPage" >

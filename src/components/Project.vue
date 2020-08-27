@@ -9,7 +9,10 @@
          <h2>{{entreprise.title}}</h2>
          <p>{{entreprise.shortPrez}}</p>
          <p>né d'une idée de {{entreprise.etpName}}</p>
+         <button @click="voirProjet(entreprise.id)">Clique ici</button>
+         <p>{{entreprise.littlePrez}}</p>
        </div>
+
      </div>
    </div>
   <!-- <section
