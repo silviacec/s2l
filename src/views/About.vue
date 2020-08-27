@@ -2,6 +2,7 @@
   <div class="about">
     <Pitch></Pitch>
     <Caroussel />
+    <Collapse />
   </div>
 </template>
 
@@ -9,11 +10,12 @@
 // @ is an alias to /src
 import Pitch from "@/components/Pitch.vue";
 import Caroussel from "@/components/Caroussel.vue";
+import Collapse from "@/components/Collapse.vue";
 
 export default {
   name: "About",
   components: {
-    Pitch, Caroussel
+    Pitch, Caroussel, Collapse
   }
 };
 </script>
