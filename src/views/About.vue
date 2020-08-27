@@ -1,18 +1,19 @@
 <template>
   <div class="about">
     <Pitch></Pitch>
-    <h2>cette page contient des explications plus détaillées destinées aux investisseurs</h2>
+    <Caroussel />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Pitch from "@/components/Pitch.vue";
+import Caroussel from "@/components/Caroussel.vue";
 
 export default {
   name: "About",
   components: {
-    Pitch
+    Pitch, Caroussel
   }
 };
 </script>
