@@ -96,7 +96,10 @@
 
 .alignRight {
   flex-direction: row-reverse;
+
 }
+
+
   .wrap {
       border: 0;
       padding: 0;
