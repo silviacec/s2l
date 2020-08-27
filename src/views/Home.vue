@@ -5,12 +5,16 @@
     <Title />
     <Steps />
     <Pitch />
-    <!-- <Types /> -->
+    <br>
+    <Types />
+    <br>
+
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
-      <div v-if="entreprise.firstPage" >
+      <br><div v-if="entreprise.firstPage" >
         <Project :entreprise="entreprise"></Project>
       </div>
     </div>
+
     <Quote />
 
   </div>
@@ -22,7 +26,7 @@ import Pitch from "@/components/Pitch.vue";
 import Project from "@/components/Project.vue";
 import Steps from "@/components/Steps.vue";
 import Title from "@/components/Title.vue";
-// import Types from "@/components/Types.vue";
+import Types from "@/components/Types.vue";
 import Quote from "@/components/Quote.vue";
 
 import {entreprises} from "../data.js";
@@ -31,7 +35,7 @@ import {entreprises} from "../data.js";
 export default {
   name: "Home",
   components: {
-    Project, Pitch, Steps, Title, Quote
+    Project, Pitch, Steps, Title, Quote, Types
   },
 
   data() {
