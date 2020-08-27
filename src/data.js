@@ -20,6 +20,7 @@ export const entreprises = [
     etpCurriculum: 'Amina a commencé à réflechir à ce projet enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
     longPrez: 'Chaque seconde, 253 kilos de plastique sont déversés dans les océans. Pour lutter contre la pollution plastique des océans, un autre mastodonte marin suscite lui aussi l\'espoir.Pour laver les océans, le Manta, un voilier de 70 mètres de long, doit permettre de collecter, trier et compacter en mer une grande quantité de macro-déchets plastiques flottant à la surface des océans.',
     firstPage: true,
+    alignRight: false,
   },
   {
     id: 2,
@@ -42,6 +43,7 @@ export const entreprises = [
     etpCurriculum: 'blablabla',
     longPrez: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     firstPage: true,
+    alignRight: true,
   },
   {
     id: 3,
@@ -64,6 +66,7 @@ export const entreprises = [
     etpCurriculum: 'blablabla',
     longPrez: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     firstPage: true,
+    alignRight: false,
   },
   {
     id: 4,
@@ -85,7 +88,8 @@ export const entreprises = [
     rentability: '5000',
     etpCurriculum: 'blablabla',
     longPrez: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    firstPage: true,
+    firstPage: false,
+    alignRight: true,
   },
   {
     id: 5,
@@ -107,7 +111,8 @@ export const entreprises = [
     rentability: '5000',
     etpCurriculum: 'blablabla',
     longPrez: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    firstPage: true,
+    firstPage: false,
+    alignRight: false,
   },
   {
     id: 6,
@@ -129,6 +134,7 @@ export const entreprises = [
     rentability: '5000',
     etpCurriculum: 'blablabla',
     longPrez: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    firstPage: true,
+    firstPage: false,
+    alignRight: true,
   },
 ];
