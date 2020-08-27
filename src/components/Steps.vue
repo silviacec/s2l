@@ -2,24 +2,24 @@
   <div class='progress'>
     <div class='progress_inner'>
       <div class='progress_inner__step'>
-        <label for='step-1'> Pick your project </label>
+        <label for='step-1'>Choisis un projet</label>
       </div>
+      <!-- <div class='progress_inner__step'>
+        <label for='step-2'>Rencontre ton projet</label>
+      </div> -->
       <div class='progress_inner__step'>
-        <label for='step-2'> Get in touch with us </label>
+        <label for='step-3'>Rencontre ton projet</label>
       </div>
-      <div class='progress_inner__step'>
-        <label for='step-3'> Meet with the entreprenor </label>
-      </div>
-      <div class='progress_inner__step'>
+      <!-- <div class='progress_inner__step'>
         <label for='step-4'> Feed your new baby </label>
-      </div>
+      </div> -->
       <div class='progress_inner__step'>
-        <label for='step-5'> Grow your new baby </label>
+        <label for='step-5'>Nourris ton projet</label>
       </div>
       <input checked='checked' id='step-1' name='step' type='radio'>
-      <input id='step-2' name='step' type='radio'>
+      <!-- <input id='step-2' name='step' type='radio'> -->
       <input id='step-3' name='step' type='radio'>
-      <input id='step-4' name='step' type='radio'>
+      <!-- <input id='step-4' name='step' type='radio'> -->
       <input id='step-5' name='step' type='radio'>
       <div class='progress_inner__bar'></div>
       <div class='progress_inner__bar--set'></div>
@@ -45,7 +45,6 @@ export default {
   left: 0px;
   opacity: 0;
 }
-
 .progress .progress_inner #step-2:checked + input + input + input + div + div + div + div > .box_lid, body .progress_inner #step-5:checked + div + div + div + div > .box_lid, body .progress_inner #step-4:checked + input + div + div + div + div > .box_lid {
   top: -20px;
   left: 0px;
@@ -56,7 +55,6 @@ export default {
   left: 0px;
   opacity: 1;
 }
-
 .progress .progress_inner #step-3:checked + input + input + div + div + div + div > .box_item, body .progress_inner #step-5:checked + div + div + div + div > .box_item, body .progress_inner #step-4:checked + input + div + div + div + div > .box_item {
   top: 10px;
   left: 0px;
@@ -77,19 +75,17 @@ export default {
   left: 0px;
   opacity: 0;
 }
-
 .progress .progress_inner #step-4:checked + input + div + div + div + div > .box_ribbon, body .progress_inner #step-5:checked + div + div + div + div > .box_ribbon {
   top: 50%;
   left: 0px;
   opacity: 1;
 }
-.progress .progress_inner #step-4:checked + input + div + div + div + div > .box_bow, body .progress_inner #step-5:checked + div + div + div + div > .box_bow {
+/* .progress .progress_inner #step-4:checked + input + div + div + div + div > .box_bow, body .progress_inner #step-5:checked + div + div + div + div > .box_bow {
   top: -10px;
   left: 0px;
   opacity: 1;
-}
-
-.progress .progress_inner #step-5:checked + div + div + div + div > .box_tag {
+} */
+/* .progress .progress_inner #step-5:checked + div + div + div + div > .box_tag {
   top: 10px;
   left: 20px;
   opacity: 1;
@@ -98,10 +94,7 @@ export default {
   top: 10px;
   left: 20px;
   opacity: 1;
-}
-
-
-
+} */
 .progress .progress_inner,.progress .progress_inner__step:before {
   position: absolute;
   left: 0;
@@ -110,25 +103,23 @@ export default {
   transform: translateY(-50%);
   margin: auto;
 }
-
 .progress .progress_inner__bar--set, .progress .progress_inner__bar {
   height: 6px;
-  left: 10%;
-  background: repeating-linear-gradient(45deg, #1ea4ec, #1ea4ec 4px, #1f8bc5 4px, #1f8bc5 10px);
+  left: 15%; /* pour décaler la barre bleu */
+  background: repeating-linear-gradient(45deg, #1EA4EC, #1EA4EC 4px, #1F8BC5 4px, #1F8BC5 10px);
   transition: width 800ms cubic-bezier(0.915, 0.015, 0.3, 1.005);
   border-radius: 6px;
   width: 0;
   position: relative;
   z-index: -1;
 }
-
 .progress .progress_inner__step:before {
   width: 30px;
   height: 30px;
-  color: #70afd0;
+  color: #70AFD0;
   background: white;
   line-height: 30px;
-  border: 3px solid #a6cde2;
+  border: 3px solid #A6CDE2;
   font-size: 12px;
   top: 3px;
   border-radius: 100%;
@@ -136,11 +127,10 @@ export default {
   cursor: pointer;
   pointer-events: none;
 }
-
 .progress .progress_inner__step {
-  width: 20%;
+  width: 33%;
   font-size: 14px;
-  padding: 0 10px;
+  padding: 0 0px;
   transition: all 0.4s;
   float: left;
   text-align: center;
@@ -158,13 +148,12 @@ export default {
 }
 .progress .progress_inner__step:hover:before {
   color: white;
-  background: #1ea4ec;
+  background: #1EA4EC;
 }
-
 .progress {
   font-family: "Nunito", sans-serif;
-  background: #a6cde2;
-  color: #2e6c8e;
+  background: #A6CDE2;
+  color: #2E6C8E;
   text-align: center;
   font-weight: 900;
 }
@@ -175,20 +164,20 @@ export default {
 .progress .progress_inner #step-5:checked + div {
   width: 80%;
 }
-.progress .progress_inner #step-5:checked + div + div + div > .tab:nth-of-type(5) {
+/* .progress .progress_inner #step-5:checked + div + div + div > .tab:nth-of-type(5) {
   opacity: 1;
   top: 0;
-}
-.progress .progress_inner #step-5:checked + div + div + div + div {
+} */
+/* .progress .progress_inner #step-5:checked + div + div + div + div {
   right: 10%;
-}
-.progress .progress_inner #step-4:checked + input + div {
+} */
+/* .progress .progress_inner #step-4:checked + input + div {
   width: 60%;
 }
 .progress .progress_inner #step-4:checked + input + div + div + div > .tab:nth-of-type(4) {
   opacity: 1;
   top: 0;
-}
+} */
 .progress .progress_inner #step-4:checked + input + div + div + div + div {
   right: 30%;
 }
@@ -231,20 +220,21 @@ export default {
 .progress  .progress_inner__step:nth-of-type(3):before {
   content: "3";
 }
-.progress  .progress_inner__step:nth-of-type(4):before {
+/* .progress  .progress_inner__step:nth-of-type(4):before {
   content: "4";
 }
 .progress  .progress_inner__step:nth-of-type(5):before {
   content: "5";
-}
+} */
 .progress  .progress_inner__bar--set {
-  width: 80%;
+  width: 68%; /* pour channger la longueur de la barre bleu */
   top: -6px;
-  background: #70afd0;
+  background: #70AFD0;
   position: relative;
   z-index: -2;
 }
 .progress .progress_inner input[type=radio] {
   display: none;
 }
+
 </style>
