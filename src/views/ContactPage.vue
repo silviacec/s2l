@@ -18,7 +18,7 @@ export default {
   name: "Essai"
 }
 </script>
-<style>
+<!-- /* <style>
 /* #FFB3B3 */
 .contact {
   width: 100%;
@@ -85,7 +85,7 @@ export default {
   opacity: 1;
   z-index: 3;
 }
-/* ------------ contact form ----------- */
+/* contact form  */
 form { max-width:420px; margin:50px auto; }
 .feedback-input {
   color:white;
@@ -128,4 +128,4 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
-</style>
+</style> */ -->

@@ -25,7 +25,7 @@ export default {
 .contact {
   width: 100%;
   height: 100%;
-  background-color: #FFB3B3 ;
+  background-color: #ebddc3 ;
   display: grid;
   place-content: center;
 }
