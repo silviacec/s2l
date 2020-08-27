@@ -5,12 +5,12 @@
     <Title />
     <Steps />
     <Pitch />
-    <br>
+
     <Types />
-    <br>
+
 
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
-      <br><div v-if="entreprise.firstPage" >
+      <div v-if="entreprise.firstPage" >
         <Project :entreprise="entreprise"></Project>
       </div>
     </div>
