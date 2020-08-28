@@ -96,15 +96,22 @@
 </script>
 
 <style lang="css" scoped>
+
 .alignRight {
   flex-direction: row-reverse;
-}
-.alignRight .txt{
-  z-index: 3;
 }
 
 .alignLeft .pic {
   margin-right: -8%;
+}
+
+.alignRight .txt{
+  z-index: 3;
+}
+
+.alignRight .pic{
+  margin-left: -8%;
+
 }
 
 .txt button{
@@ -113,6 +120,8 @@
   padding: 1em 1em;
   border: 2px solid transparent;
 }
+
+
   .wrap {
       border: 0;
       padding: 0;
@@ -121,11 +130,13 @@
       width: 1200px;
       margin: 2em 7em;
   }
+
   .item {
     display: flex;
     margin-bottom: 50px;
     align-items: center;
   }
+
   .item .txt {
     width: 55%;
     flex-direction: column;
@@ -135,84 +146,22 @@
     box-sizing: border-box;
     z-index: 1;
   }
+
   .item .pic {
     width: 55%;
   }
+
   .item .pic img {
     width: 100%;
   }
+
+
   /* .item> :first-child {
-    margin-right: -10%;
+     margin-right: -10%;
   } */
+
   .item:nth-child(1) .txt {
     background-color:#f5d951ed;
-  }
-  .item:nth-child(2) .txt {
-    background-color: #2E938F;
-  }
-  .item:nth-child(3) .txt {
-    background-color: #FEC979;
-  }
-  .item:nth-child(4) .txt {
-    background-color: #8ABAC3;
-  }
-  .vert {
-    background-color: rgb(198, 227, 215);
-  }
-  .rose {
-    background-color: rgb(247, 228, 228);
-  }
-  .bleu {
-    background-color: #BBD4F9;
-  }
-  .gris {
-    background-color: rgb(224, 224, 224);
-  }
-/* .alignRight {
-  flex-direction: row-reverse;
-
-}
-
-
-  .wrap {
-      border: 0;
-      padding: 0;
-      list-style: none;
-      padding: 50px 0px;
-      width: 1200px;
-      margin: 2em;
-  }
-
-  .item {
-    display: flex;
-    margin-bottom: 50px;
-    align-items: center;
-  }
-
-  .item .txt {
-    width: 55%;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    padding: 50px 30px;
-    box-sizing: border-box;
-    z-index: 1;
-  }
-
-  .item .pic {
-    width: 55%;
-  }
-
-  .item .pic img {
-    width: 100%;
-  }
-
-  .item> :first-child {
-    margin-right: -10%;
-  }
-
-  .item:nth-child(1) .txt {
-    background-color: pink;
   }
 
   .item:nth-child(2) .txt {
@@ -241,6 +190,6 @@
 
   .gris {
     background-color: rgb(224, 224, 224);
-  } */
+  }
 
 </style>
