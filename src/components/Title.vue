@@ -12,9 +12,10 @@ export default {
 
 </script>
 
-<style lang="css" scoped>
+<style lang="css" >
 
 header{
+  background-image: url("../assets/bg3.jpg");
   box-sizing: border-box;
   min-height: 100vh;
   padding: 30vw 0 5vw;
@@ -28,6 +29,7 @@ header h1{
 }
 
 header, header:before{
+
   background: 50% 50% / cover;
 }
 

@@ -1,12 +1,15 @@
 <template>
   <div class="home">
-
+    <div class="haut">
     <Title />
 
-    <Steps />
+      <Steps />
+      <div class="vide">
 
+      </div>
+
+    </div>
     <Pitch />
-
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <div v-if="entreprise.firstPage" >
         <Project :entreprise="entreprise"></Project>
@@ -53,3 +56,14 @@ export default {
   // },
 };
 </script>
+
+<style media="screen">
+  .haut {
+    background-image: url("../assets/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .vide {
+    height: 30vh;
+  }
+</style>

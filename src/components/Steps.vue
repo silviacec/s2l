@@ -152,10 +152,11 @@ export default {
 }
 .progress {
   font-family: "Nunito", sans-serif;
-  background: #A6CDE2;
-  color: #2E6C8E;
+  /* background: #A6CDE2; */
+  /* color: #2E6C8E; */
   text-align: center;
   font-weight: 900;
+  background-color: inherit;
 }
 .progress .progress_inner {
   height: 200px;
