@@ -10,7 +10,7 @@
       <div class="type-2">
         <img src="@/assets/logos/social.svg"  alt="social"  class="img"/>
         <h4>Social</h4>
-        <p>Les projets sociaux permet d'encourager l’esprit collaboratif, en redistribuant les richesses,Travaillé et agir pour le bien commun.</p>
+        <p>Les projets sociaux permettent d'encourager l’esprit collaboratif, en redistribuant les richesses, en travaillant et agissant pour le bien commun.</p>
       </div>
       <div class="type-3">
         <img src="@/assets/logos/ecologie.svg" alt="Ecologie" class="img" />
@@ -20,7 +20,7 @@
       <div class="type-4">
         <img src="@/assets/logos/education.svg" alt="Educatif"  class="img"/>
         <h4>Education</h4>
-        <p>Les projets educatifs sont indisponsable pour le meilleur divellopement humains sur le plan de la recherche et de la création.
+        <p>Les projets educatifs sont indispensables au developpement de la recherche et de la création.
         </p>
       </div>
     <!-- </ul> -->

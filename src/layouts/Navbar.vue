@@ -9,7 +9,6 @@
     </label>
     <div class="logo">
           <a href="#"> BRAND </a>
-
     </div>
     <div class="nav-wrapper">
       <ul>
@@ -58,10 +57,10 @@ nav{
 }
 
 .logo{
-      float: left;
-      padding: 8px;
-      margin-left: 16px;
-      margin-top: 8px;
+  float: left;
+  padding: 8px;
+  margin-left: 16px;
+  margin-top: 8px;
 }
 
 .logo a {

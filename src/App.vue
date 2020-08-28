@@ -2,7 +2,7 @@
   <div id="app">
     <!-- router vue qui prend en name le surnom du header et un autre du footer -->
     <router-view name="navbar" />
-    <router-view></router-view>
+      <div><router-view></router-view></div>
     <router-view name="footer" />
 
   </div>

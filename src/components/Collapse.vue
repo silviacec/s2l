@@ -13,21 +13,21 @@
         </b-collapse >
     </div >
      <div >
-        <b-button  v-b-toggle.collapse-3  class = "m-1" >Est ce qu'on garantit le succès des projets présentés ?</b-button >
+        <b-button  v-b-toggle.collapse-3  class = "m-1" >Est-ce qu'on garantit le succès des projets présentés ?</b-button >
         <b-collapse  id = "collapse-3" >
-          <b-card >Non l'ange ne peut pas vous garantir le succès des projets présentés et que les investissements seront rentables mais Notre intérêt et de faire tout ce qu'on peut, en terme d'analyse crédit, pour que les projets puissent aboutir et pour que les entreprises financées remboursent leurs crédits obligataires.</b-card >
+          <b-card >Non l'ange ne peut pas vous garantir le succès des projets présentés et que les investissements seront rentables mais notre intérêt est de faire le possible, en termes d'analyse de crédit, pour que les projets puissent aboutir et pour que les entreprises financées remboursent leurs crédits.</b-card >
         </b-collapse >
     </div >
     <div >
-        <b-button  v-b-toggle.collapse-4  class = "m-1" >C'est combien La rénumération des apporteurs d'affaire? </b-button >
+        <b-button  v-b-toggle.collapse-4  class = "m-1" >Quelle est la rémunération des investisseurs ? </b-button >
         <b-collapse   id = "collapse-4" >
-         <b-card >Concernant la rémunération des apporteurs d'affaires,selon les cas une commission fixe ou variable, indexée sur le montant investi.</b-card >
+         <b-card >Concernant la rémunération, il est possible selon les cas d'avoir une commission fixe ou variable, indexée sur le montant investi.</b-card >
         </b-collapse >
     </div >
     <div >
         <b-button  v-b-toggle.collapse-5  class = "m-1" >Quelle est la règlementation applicable ? </b-button >
         <b-collapse    id = "collapse-5" >
-         <b-card >L'ange de gain  a le statut de Conseil en Investissement Participatif et est en cours, d'immatriculation auprès de l'Organisme pour le registre unique des intermédiaires en assurance et banque.  </b-card >
+         <b-card >L'ange de gain a le statut de Conseil en Investissement Participatif et est en cours d'immatriculation auprès de l'Organisme pour le registre unique des intermédiaires en assurance et banque.</b-card >
         </b-collapse >
     </div >
   </div >

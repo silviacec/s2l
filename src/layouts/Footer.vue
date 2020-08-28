@@ -38,7 +38,7 @@ router-link{
 footer {
   width: 100%;
   display: inline-block;
-  margin: 2em 0;
+  /* margin: 2em 0; */
   height: 70px;
   background-color: #999;
 }

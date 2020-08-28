@@ -7,8 +7,6 @@
 
     <Pitch />
 
-    <Types />
-
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <div v-if="entreprise.firstPage" >
         <Project :entreprise="entreprise"></Project>
@@ -16,6 +14,8 @@
     </div>
 
     <Quote />
+
+    <Types />
 
   </div>
 </template>
