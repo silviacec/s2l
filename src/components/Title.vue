@@ -15,7 +15,6 @@ export default {
 <style lang="css" >
 
 header{
-  background-image: url("../assets/bg3.jpg");
   box-sizing: border-box;
   min-height: 100vh;
   padding: 30vw 0 5vw;
