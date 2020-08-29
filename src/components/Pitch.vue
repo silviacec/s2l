@@ -22,6 +22,7 @@ export default {
 <style lang="css">
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
 .accueil p {
   width: 60%;
   margin-left: 20%;
@@ -33,6 +34,7 @@ export default {
   border-left: none;
   border-right: none;
   padding: 1em;
+  text-align: justify;
 }
 
 .accueil a {
@@ -62,5 +64,9 @@ export default {
 }
 .accueil a:hover:before {
   height: 100%;
+}
+
+.accueil h2 {
+  margin-top: 5vh;
 }
 </style>
