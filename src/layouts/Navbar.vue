@@ -1,12 +1,12 @@
 <template lang="html">
   <div class="container">
   <nav>
-    <input type="checkbox" id="nav" class="hidden">
+    <!-- <input type="checkbox" id="nav" class="hidden">
     <label for="nav" class="nav-btn">
           <i></i>
           <i></i>
           <i></i>
-    </label>
+    </label> -->
     <div class="logo">
           <a href="#"> BRAND </a>
     </div>

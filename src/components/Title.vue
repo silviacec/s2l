@@ -1,7 +1,7 @@
 <template lang="html">
   <header>
-        <h1> Les petits anges </h1>
-        <p> Devenez riche en investissant </p>
+        <h1> UPInvest </h1>
+        <p> Cible plus haut, regarde plus loin </p>
       </header>
 </template>
 
@@ -17,10 +17,11 @@ export default {
 header{
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 30vw 0 5vw;
+  padding: 25vw 0 5vw;
   position: relative;
   transform-style: inherit;
   width: 100vw;
+  margin-top: 5vh;
 }
 
 header h1{
