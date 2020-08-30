@@ -1,204 +1,121 @@
 <template lang="html">
   <div class="wrapper">
-
-  <!--ESSAI -->
-  <div class='ui'>
-  <div class='ui_box white'>
-    <div class='ui_box__inner'>
-      <h2>
-        Où en est le projet ?
-      </h2><br><br>
-      <!-- <p> On en est a 58% de cleaner tout les océans </p> -->
-      <div class='stat'>
-        <span>58%</span>
-      </div>
-      <div class='progress'>
-        <div class='progress_bar'></div>
-      </div>
-        <!-- <p>Aidez-nous à dépolluer la mer au lieu de la polluer.</p> -->
-    </div>
-    <div class='drop'>
-      <p> Clic ici si t'es intéressé.</p>
-      <div class='arrow'></div>
-    </div>
-  </div>
-  <div class='ui_box white' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-    <div class='ui_box__inner' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-      <h2>
-        Type de projet
-      </h2><br><br>
-      <!-- <p>Lorem ipsum dolor sit amet</p> -->
-      <div class='stat_left'>
-        <ul>
-          <li>
-            Environnemental
-          </li>
-          <li>
-            {{projetSelectionne.tag1}}
-          </li>
-          <li>
-            {{projetSelectionne.tag2}}
-          </li>
-          <li>
-            {{projetSelectionne.tag3}}
-          </li>
-        </ul>
-      </div>
-      <div class='progress_graph'>
-        <div class='progress_graph__bar--2'></div>
-        <div class='progress_graph__bar--3'></div>
-        <div class='progress_graph__bar--4'></div>
-      </div>
-      <!-- <p>Lorem ipsum dolor sit amet. Some more super groovy information.</p> -->
-    </div>
-    <div class='drop'>
-      <p>Take a closer look</p>
-      <div class='arrow'></div>
-    </div>
-  </div>
-  <div class='ui_box white'>
-    <div class='ui_box__inner'>
-      <h2>
-        Total Récolté
-      </h2><br><br>
-      <!-- <p>Lorem ipsum dolor sit amet</p> -->
-      <div class='stat'>
-        <span>€{{projetSelectionne.needs}}</span>
-      </div>
-      <div class='progress'>
-        <div class='progress_bar--two'></div>
-      </div>
-      <!-- <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p> -->
-    </div>
-    <div class='drop'>
-      <p>Take a closer look</p>
-      <div class='arrow'></div>
-    </div>
-  </div>
-</div>
-<!-- partie description de l'entrepreneur -->
-<div class="container">
-    <div class="post">
-        <div class="header_post">
-          <img :src="showPhotoProfile" alt="" style="width: 700px; height: auto; margin: 25px; border-radius: 5px;">
-        </div>
-        <div class="body_post">
-            <div class="post_content">
-                <h1> Titre </h1>
-                <p>{{projetSelectionne.shortPrez}}</p>
-               <p>{{projetSelectionne.longPrez}}</p>
-                <div class="container_infos">
-                    <div class="postedBy">
-                        <span>author</span>
-                        {{projetSelectionne.etpName}}
-                    </div>
-                    <div class="container_tags">
-                        <span>tags</span>
-                        <div class="tags">
-                            <ul>
-                                <li> cheese naan </li>
-                                <li> samossa recyclé </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <h2>{{projetSelectionne.title}}</h2>
+    <div class='ui'>
+      <div class='ui_box white'>
+        <div class='ui_box__inner'>
+          <h2>
+            Où en est le projet ?
+          </h2><br><br>
+          <div class='stat'>
+            <span>58%</span>
+          </div>
+          <div class='progress'>
+            <div class='progress_bar'>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-<!-- <div>
-    <div class="wrapper">
-      <div class="profile">
-        <div class="profile_img_info"
-              v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-          <div class="img">
-              <img :src="showPhoto1" alt="Photo de notre projet">
-          </div>
-          <div class="info">
-            <p class="name"> {{projetSelectionne.etpName}} </p>
-            <p class="place">{{projetSelectionne.shortPrez}} -->
-              <!-- <span>
-              <i class=""></i>
-            </span> -->
-            <!-- Paris </p>
           </div>
         </div>
-        <div class="profile_skills"
-              v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-          <div class="skills">
-            <p> {{projetSelectionne.title}} </p>
-            <ul> -->
-              <!-- <li>
-                <span class="icon">
-                  <i class=""></i>
-                </span>
-                <span class="title"> {{projetSelectionne.etpCurriculum}}  </span>
-              </li> -->
-              <!-- <li> -->
-                <!-- <span class="icon"></span> -->
-                <!-- <span class="title">{{projetSelectionne.longPrez}}</span>
-              </li>
+        <!-- <div class='drop'>
+          <p> Clic ici si t'es intéressé.</p>
+          <div class='arrow'></div>
+        </div> -->
+      </div>
+      <div class='ui_box white' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
+        <div class='ui_box__inner' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
+          <h2>Type de projet
+          </h2><br><br>
+      <!-- <p>Lorem ipsum dolor sit amet</p> -->
+          <div class='stat_left'>
+            <ul>
               <li>
-                <span class="icon"></span> -->
-                <!-- <span class="title"> Cliquez ici, pour plus de détails </span> -->
-              <!-- </li>
+                <h5>{{projetSelectionne.type}}</h5>
+              </li>
+              <li>{{projetSelectionne.tag1}}
+              </li>
+              <li>{{projetSelectionne.tag2}}
+              </li>
+              <li>{{projetSelectionne.tag3}}
+              </li>
             </ul>
           </div>
-          <div class="tags_wrap">
-            <span class="tag">{{projetSelectionne.type}}</span>
-            <span class="tag">{{projetSelectionne.tag1}}</span>
-            <span class="tag">{{projetSelectionne.tag2}}</span>
-            <span class="tag">{{projetSelectionne.tag3}}</span>
+          <div class='progress_graph'>
+            <div class='progress_graph__bar--2'></div>
+              <div class='progress_graph__bar--3'></div>
+                <div class='progress_graph__bar--4'></div>
+                </div>
+      <!-- <p>Lorem ipsum dolor sit amet. Some more super groovy information.</p> -->
+        </div>
+              <!-- <div class='drop'>
+                <p>Take a closer look</p>
+                <div class='arrow'></div>
+              </div> -->
+      </div>
+        <div class='ui_box white'>
+          <div class='ui_box__inner'>
+            <div class='stat'>
+              <h5>Besoin : €{{projetSelectionne.needs}}</h5>
+            </div><br><br>
+            <p>Part d'investissement : {{projetSelectionne.participation}}</p>
+            <p>Rentabilité attendue : {{projetSelectionne.rentability}}</p>
+            <div class='progress'>
+              <div class='progress_bar--two'></div>
+              </div>
+                <!-- <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p> -->
+            </div>
+              <!-- <div class='drop'>
+                <p>Take a closer look</p>
+                <div class='arrow'></div>
+              </div> -->
+          </div>
+        </div>
+              <!-- partie description de l'entrepreneur -->
+        <div class="container">
+          <div class="post">
+            <div class="header_post">
+              <img :src="showPhotoProfile" alt="" style="width: 700px; height: auto; margin: 25px; border-radius: 5px;">
+            </div>
+            <div class="body_post">
+              <div class="post_content">
+                <h1> {{projetSelectionne.etpName}} </h1>
+                <p>{{projetSelectionne.etpCurriculum}}</p>
+                <p>{{projetSelectionne.longPrez}}</p>
+                <!-- <div class="container_infos">
+                <div class="postedBy">
+                    <span>author</span>
+                    {{projetSelectionne.etpName}}
+                </div>
+                <div class="container_tags">
+                    <span>tags</span>
+                    <div class="tags">
+                        <ul>
+                            <li> cheese naan </li>
+                            <li> samossa recyclé </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            </div>
           </div>
         </div>
       </div>
-      <div class="profile_counts" v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-        <div class="profile_counts_wrap">
-          <div class="item"> -->
-                <!-- <div class="icon">
-                  <i class="fas fa-thumbs-up" aria-hidden="true"></i>
-                </div> -->
-                <!-- <div class="title"> Les besoins de ce projet : {{projetSelectionne.needs}} € </div>
-          </div>
-        </div>
-        <div class="profile_counts_wrap">
-          <div class="item"> -->
-                <!-- <div class="icon"><i class="fas fa-thumbs-up" aria-hidden="true"></div> -->
-                <!-- <div class="title"> Le montant que vous pouvez investir : {{projetSelectionne.participation}} € </div>
-          </div>
-        </div>
-        <div class="profile_counts_wrap">
-          <div class="item">
-                <div class="icon"> -->
-                  <!-- <i class="fas fa-thumbs-up" aria-hidden="true"></i> -->
-                <!-- </div>
-                <div class="title"> Le montant que cet investissement va vous rapporter annuellement à terme : {{projetSelectionne.rentability}} € </div>
-
-          </div>
-        </div>
-      </div>
-      <div class="photo_profile ">
-        <img :src="showPhotoProfile" alt="" style="width: 700px; height: auto; margin: 25px; border-radius: 5px;">
-        <p class="cv">
-          {{projetSelectionne.etpCurriculum}}
-        </p>
-      </div>
-    </div> -->
-    <!-- <div class="video-projet">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/yXEMJSL5rKs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div> -->
-<!-- </div> -->
+    <div class="">
+      <Caroussel />
+    </div>
+  </div>
 </template>
 
 <script>
 
 // @ is an alias to /src
-// import Project from "@/components/Project.vue";
+import Caroussel from "@/components/Caroussel.vue";
 import {entreprises} from "../data.js";
 
 export default {
   name: "SingleProject",
+
+  components: {
+    Caroussel
+  },
 
   // components: {
   //   Project
@@ -235,9 +152,14 @@ export default {
 
 
 <style lang="css" scoped>
+
 .wrapper {
   min-height: 200vh;
   /* c'est bourrin mais ça marche !!! garde ça bien en tête */
+}
+
+h2 {
+  margin-top: 20vh;
 }
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
@@ -570,14 +492,15 @@ body .ui_box:hover {
 .container .post .body_post .post_content p {
   font-size: 14px;
   font-weight: normal;
+  text-align: justify;
 }
 .container .post .body_post .post_content .container_infos {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
   padding-top: 25px;
 }
 .container .post .body_post .post_content .container_infos .postedBy {
