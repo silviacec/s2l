@@ -1,6 +1,6 @@
 <template>
 <div class="contact">
-  <span class="navbar__menu-item"><span data-menu-item-text="#Discover" class="navbar__menu-item-title">#Contact</span>
+  <span class="navbar__menu-item"><span data-menu-item-text="#entrepreneur" class="navbar__menu-item-title">#Contact</span>
     <span class="menu-item-hover-image" data-image-url="chat.jpg" style="
                       background-image: url(chat.jpg);
                     "></span>

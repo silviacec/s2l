@@ -4,9 +4,9 @@
     <form>
 
       <span class="navbar__menu-item"><span>#Contact</span>
-        <!-- <span class="menu-item-hover-image" data-image-url="chat.jpg" style="
+        <span class="menu-item-hover-image" data-image-url="chat.jpg" style="
                           background-image: url(chat.jpg);">
-        </span> -->
+        </span>
       </span>
 
       <label>
