@@ -25,7 +25,5 @@ export default {
   margin-top: 20vh;
 }
 
-Pitch {
-  margin-bottom: 10vh;
-}
+
 </style>

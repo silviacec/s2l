@@ -30,6 +30,7 @@
 export default {
   name: "Accordion",
 };
+
 </script>
 
 <style lang="css">
@@ -71,7 +72,7 @@ export default {
   background: rgba(68, 207, 168, 0.16);
   bottom: 0;
   left: 0;
-  position: absolute;
+  /* position: absolute; */
   transition: height 250ms;
 }
 .accueil a:hover {
@@ -110,7 +111,7 @@ export default {
 	background-image: url("http://maksim.be/codepen/img-3.jpg");
 }
 .accordion ul li::before {
-	position: absolute;
+	/* position: absolute; */
 	width: 100%;
 	height: 100%;
   left: 0;
