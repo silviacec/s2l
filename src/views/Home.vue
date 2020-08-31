@@ -10,8 +10,10 @@
 
     </div>
     <Pitch />
-    <div class="accueil">
-    <a href="#"><router-link class="myButton" to="/about">Plus de détails</router-link> </a>
+    <div class="en-savoir-plus">
+    <!-- <a href="#"> -->
+      <router-link class="myButton" to="/about">Plus de détails</router-link>
+    <!-- </a> -->
   </div>
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <div v-if="entreprise.firstPage" >
@@ -70,18 +72,18 @@ export default {
     height: 30vh;
   }
 
-  .accueil a {
+  .en-savoir-plus a {
     color: #248a6d;
     text-shadow: 0 1px 0 #e7f9f4;
     text-decoration: none;
     border-bottom: 1px dashed #33c79d;
     display: inline-block;
-    /* position: relative; */
     padding: 0 0.2em;
     transition: all 250ms;
     z-index: 1000;
+    margin-bottom: 5vh;
   }
-  .accueil a:before {
+  .en-savoir-plus a:before {
     content: "";
     z-index: -1;
     width: 100%;
@@ -92,10 +94,10 @@ export default {
     position: absolute;
     transition: height 250ms;
   }
-  .accueil a:hover {
+  .en-savoir-plus a:hover {
     border-color: transparent;
   }
-  .accueil a:hover:before {
+  .en-savoir-plus a:hover:before {
     height: 100%;
   }
 

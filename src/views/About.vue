@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <Pitch></Pitch>
-    <Caroussel />
+    <Accordion />
     <Collapse />
   </div>
 </template>
@@ -9,13 +9,23 @@
 <script>
 // @ is an alias to /src
 import Pitch from "@/components/Pitch.vue";
-import Caroussel from "@/components/Caroussel.vue";
+import Accordion from "@/components/Accordion.vue";
 import Collapse from "@/components/Collapse.vue";
 
 export default {
   name: "About",
   components: {
-    Pitch, Caroussel, Collapse
+    Pitch, Accordion, Collapse
   }
 };
 </script>
+<style >
+
+.about {
+  margin-top: 20vh;
+}
+
+Pitch {
+  margin-bottom: 10vh;
+}
+</style>
