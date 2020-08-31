@@ -37,16 +37,16 @@ export default {
 .crcl_bleu_1, .crcl_bleu_2{
   /* display:table-cell; */
   vertical-align: middle;
-  background: #f5d951ed;
-  border-radius: 10%;
+  background: #80808085;
+  border-radius: 5%;
   width: 300px;
-  height: 300px;
+  height: 200px;
   line-height: 1em;
-  border: 2px solid rgb(158 202 202);
+  border: 2px solid #c1c4c4;
   color: #3b3d69;
   text-align: center;
   font-size: 1.2em;
-  padding: 30px;
+  /* padding: 30px; */
   margin: 20px 80px;
   box-shadow: -9px 14px 20px 0px #000000b3;
   }
@@ -65,5 +65,10 @@ export default {
     font-weight: bold;
     color: #bb381b;
     font-size: 1.5em;
+  }
+
+  .ent:hover, .inv:hover {
+    -webkit-text-stroke: none;
+    color: white;
   }
 </style>
