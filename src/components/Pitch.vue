@@ -1,4 +1,5 @@
 <template lang="html">
+
   <div class="pitch">
     <h2>Le concept</h2>
     <div>
@@ -13,16 +14,18 @@
 </template>
 
 <script>
+
 export default {
   name: "Pitch",
 };
+
 </script>
 
 <style lang="css">
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 
-.pitch p {
+  .pitch p {
     font: 300 1.15em/1.5 "Raleway", sans-serif;
     color: #333333;
     text-shadow: 0 1px 0 #ebebeb;
@@ -33,10 +36,11 @@ export default {
     width:80%;
     margin: 0 auto 8vh auto;
     text-align: justify;
-}
+  }
 
-.pitch h2 {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
+  .pitch h2 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  
 </style>

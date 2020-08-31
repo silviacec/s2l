@@ -1,67 +1,21 @@
 <template lang="html">
+
   <div class="wrap"
-        v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social', gris: entreprise.type === 'tech' }">
-     <div class="item" v-bind:class="{ 'alignRight': entreprise.alignRight, 'alignLeft': !entreprise.alignRight }">
-       <div class="pic">
+    v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social', gris: entreprise.type === 'tech' }">
+    <div class="item" v-bind:class="{ 'alignRight': entreprise.alignRight, 'alignLeft': !entreprise.alignRight }">
+      <div class="pic">
         <img alt="img-01.jpg" :src="showPhoto1" />
-       </div>
-       <div class="txt">
-         <h2>{{entreprise.title}}</h2>
-         <p>{{entreprise.shortPrez}}</p>
-         <p>né d'une idée de {{entreprise.etpName}}</p>
-         <button @click="voirProjet(entreprise.id)">Clique ici</button>
-         <p>{{entreprise.littlePrez}}</p>
-       </div>
-
-     </div>
-   </div>
-  <!-- <section
-        v-bind:class="{ vert: entreprise.type === 'environnemental', bleu: entreprise.type === 'éducatif', rose: entreprise.type === 'social', gris: entreprise.type === 'tech' }"
-        class="content content_part content_project"
-        data-color="#C6E3D7" style="height: 44.5em;">
-
-    <div class="content_inner">
-      <article class="description project_description">
-      <div class="project_description_cont">
-        <h1 class="project_title" style="border-color:#C6E3D7;">
-          {{entreprise.title}}
-        </h1>
-        <div class="project_text">
-          <p>
-            {{entreprise.shortPrez}} <br>
-            Un projet né d'une idée de {{entreprise.etpName}}
-            <button @click="voirProjet(entreprise.id)">Clique ici</button>
-            {{entreprise.littlePrez}}
-          </p>
-        </div>
       </div>
-      </article>
-
-      <div class="project_number">{{entreprise.id}}
-      </div>
-
-      <div class="table">
-        <div class="project_images">
-          <div class="1">
-            <figure class="project_image odd first">
-              <img alt="img-01.jpg" :src="showPhoto1" />
-            </figure>
-            <figure class="project_image even first">
-              <img alt="img-03.jpg" :src="showPhoto3" />
-            </figure>
-          </div>
-          <div class="2">
-            <figure class="project_image odd">
-              <img alt="img-02.jpg" :src="showPhoto2" />
-            </figure>
-            <figure class="project_image even">
-              <img alt="img-04.jpg" :src="showPhoto4" />
-            </figure>
-          </div>
-        </div>
+      <div class="txt">
+        <h2>{{entreprise.title}}</h2>
+        <p>{{entreprise.shortPrez}}</p>
+        <p>né d'une idée de {{entreprise.etpName}}</p>
+        <button @click="voirProjet(entreprise.id)">Clique ici</button>
+        <p>{{entreprise.littlePrez}}</p>
       </div>
     </div>
-  </section> -->
+  </div>
+
 </template>
 
 <script>
@@ -71,7 +25,7 @@
     props: ['entreprise'],
 
     computed: {
-    showPhoto1 () {
+      showPhoto1 () {
       return require('../assets/' + this.entreprise.photo1)
     },
 
@@ -82,53 +36,54 @@
     showPhoto3() {
       return require('../assets/' + this.entreprise.photo3)
     },
+
     showPhoto4() {
       return require('../assets/' + this.entreprise.photo4)
     }
   },
+
     methods: {
       voirProjet(identifiant) {
-        this.$router.push({ path: `/SingleProject/${identifiant}` });
+      this.$router.push({ path: `/SingleProject/${identifiant}` });
       }
     },
   };
 
-</script>
+  </script>
 
-<style lang="css" scoped>
+  <style lang="css" scoped>
 
-.alignRight {
-  flex-direction: row-reverse;
-}
+  .alignRight {
+    flex-direction: row-reverse;
+  }
 
-.alignLeft .pic {
-  margin-right: -8%;
-}
+  .alignLeft .pic {
+    margin-right: -8%;
+  }
 
-.alignRight .txt{
-  z-index: 3;
-}
+  .alignRight .txt {
+    z-index: 3;
+  }
 
-.alignRight .pic{
-  margin-left: -8%;
+  .alignRight .pic {
+    margin-left: -8%;
+  }
 
-}
-
-.txt button{
-  margin: 1em;
-  color: #f5d951ed;
-  padding: 1em 1em;
-  border: 2px solid transparent;
-}
+  .txt button {
+    margin: 1em;
+    color: #f5d951ed;
+    padding: 1em 1em;
+    border: 2px solid transparent;
+  }
 
 
   .wrap {
-      border: 0;
-      padding: 0;
-      list-style: none;
-      padding: 50px 0px;
-      width: 1200px;
-      margin: 2em 7em;
+    border: 0;
+    padding: 0;
+    list-style: none;
+    padding: 50px 0px;
+    width: 1200px;
+    margin: 2em 7em;
   }
 
   .item {
@@ -154,11 +109,6 @@
   .item .pic img {
     width: 100%;
   }
-
-
-  /* .item> :first-child {
-     margin-right: -10%;
-  } */
 
   .item:nth-child(1) .txt {
     background-color:#f5d951ed;
