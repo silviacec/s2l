@@ -50,17 +50,19 @@
 
 <style>
  .m-1{
-  width: 50em !important;
-  background-color:#ced0d2 !important;
+  width: 60em !important;
+  background-color:#c9cdaa !important;
+  border-color: #6c757d00 !important;
  }
 
  .tablist {
   margin-top:10vh;
   margin-bottom:20vh;
+
  }
 
  #collapse-1, #collapse-2, #collapse-3, #collapse-4, #collapse-5 {
-   width: 60%;
+   width: 60em;
    margin: auto;
  }
 </style>

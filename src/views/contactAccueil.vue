@@ -26,7 +26,7 @@ export default {
 
 <style media="screen">
   .contact {
-    background-color: lightgrey !important;
+    background-color: #c9cdaa !important;
     padding: 100px;
   }
 

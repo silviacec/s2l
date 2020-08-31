@@ -5,7 +5,7 @@
       <div class='ui_box white'>
         <div class='ui_box__inner'>
           <h2>
-            Où en est le projet ?
+            Où en est la recolte de fonds pour ce projet ?
           </h2><br><br>
           <div class='stat'>
             <span>58%</span>
@@ -22,14 +22,11 @@
       </div>
       <div class='ui_box white' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
         <div class='ui_box__inner' v-bind:class="{ vert: projetSelectionne.type === 'environnemental', bleu: projetSelectionne.type === 'éducatif', rose: projetSelectionne.type === 'social' }">
-          <h2>Type de projet
-          </h2><br><br>
+          <h2>Entreprise qui opère dans <br> le domaine <span class="domain">{{projetSelectionne.type}}</span>
+          </h2>
       <!-- <p>Lorem ipsum dolor sit amet</p> -->
           <div class='stat_left'>
             <ul>
-              <li>
-                <h5>{{projetSelectionne.type}}</h5>
-              </li>
               <li>{{projetSelectionne.tag1}}
               </li>
               <li>{{projetSelectionne.tag2}}
@@ -53,10 +50,10 @@
         <div class='ui_box white'>
           <div class='ui_box__inner'>
             <div class='stat'>
-              <h5>Besoin : €{{projetSelectionne.needs}}</h5>
+              <h5>Fonds nécessaires : <br> €{{projetSelectionne.needs}}</h5>
             </div><br><br>
-            <p>Part d'investissement : {{projetSelectionne.participation}}</p>
-            <p>Rentabilité attendue : {{projetSelectionne.rentability}}</p>
+            <p>Investissement possible : <br>{{projetSelectionne.participation}}</p>
+            <p>Rentabilité attendue : <br>{{projetSelectionne.rentability}}</p>
             <div class='progress'>
               <div class='progress_bar--two'></div>
               </div>
@@ -198,6 +195,11 @@ export default {
 h2 {
   margin-top: 20vh;
 }
+
+.domain {
+  font-size: 1em !important;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   background: radial-gradient(#fff, #C1C1C1);
@@ -297,7 +299,7 @@ body .ui_box__inner .progress_graph {
   text-align: center;
   position: relative;
   padding-left: 20px;
-  top: 24px;
+  top: 4em;
 }
 body .ui_box__inner .progress_graph__bar--1 {
   width: 10px;
@@ -394,6 +396,7 @@ body .ui_box:hover {
 }
 .stat_left {
   float: left;
+  margin-top: 4em;
 }
 .arrow {
   width: 4px;
@@ -660,16 +663,17 @@ footer span i {
   height: 60%!important;
   display: inline-flex;
   align-items: center;
-  margin: 20vh 0;
-
+  margin: 30vh 0 20vh 0;
 }
 h1{
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 2em;
+  font-family: Raleway;
 }
 p{
   font-size: 1rem;
+  font-family: Raleway;
 }
 
 .vert {

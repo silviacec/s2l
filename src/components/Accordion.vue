@@ -2,24 +2,24 @@
 
   <div class="accordion">
     <ul>
-      <li><a href="#">
+      <li><router-link to="/ProjectsPage">
         <div>
           <h1> Choisis ton projet </h1>
-          <p> Parmi nos catégories social, éducative et environnemental. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut consequat.</p>
+          <p> Parmi nos catégories social, éducative, environnemental et tech. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut consequat.</p>
         </div>
-        </a> </li>
-      <li><a href="#">
+        </router-link> </li>
+      <li><router-link to="/ContactEntrepreneur">
         <div>
           <h1> Adopte ton projet </h1>
           <p> Envoie nous un message sur la page contact et on reviendra vers toi pour vous mettre en relation, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        </a> </li>
-      <li><a href="#">
+        </router-link></li>
+      <li><router-link to="/ContactEntrepreneur">
         <div>
           <h1> Nourris ton projet </h1>
           <p> It's now time to expand and conquer the world. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        </a> </li>
+      </router-link> </li>
     </ul>
   </div>
 

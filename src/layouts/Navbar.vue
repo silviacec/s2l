@@ -8,14 +8,14 @@
           <i></i>
     </label> -->
     <div class="logo">
-          <a href="#"> BRAND </a>
+          <a href="#"> Up-Invest </a>
     </div>
     <div class="nav-wrapper">
       <ul>
-        <li><a href="#"> <router-link to="/">Home</router-link> </a></li>
-        <li><a href="#"> <router-link to="/ProjectsPage">Projets</router-link> </a></li>
-        <li><a href="#"> <router-link to="/about">About</router-link>  </a></li>
-        <li><a href="#"> <router-link to="/ContactAccueil">Contact</router-link> </a></li>
+        <li> <router-link to="/">Home</router-link> </li>
+        <li> <router-link to="/ProjectsPage">Projets</router-link> </li>
+        <li> <router-link to="/about">About</router-link>  </li>
+        <li> <router-link to="/ContactAccueil">Contact</router-link> </li>
 
       </ul>
 

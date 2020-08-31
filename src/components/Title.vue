@@ -1,6 +1,6 @@
 <template lang="html">
   <header>
-        <h1> UPInvest </h1>
+        <h1> UpInvest </h1>
         <p> Cible plus haut, regarde plus loin </p>
       </header>
 </template>

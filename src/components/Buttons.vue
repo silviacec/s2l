@@ -37,7 +37,7 @@ export default {
 .crcl_bleu_1, .crcl_bleu_2 {
     /* display: table-cell; */
     vertical-align: middle;
-    background: #f0f9fa66;
+    background: #dee1c4;
     border-radius: 10%;
     width: 300px;
     height: 200px;
