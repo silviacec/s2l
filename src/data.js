@@ -63,7 +63,7 @@ export const entreprises = [
     needs: '500 000',
     participation: '30 000',
     rentability: '10 000',
-    etpCurriculum: 'blablabla',
+    etpCurriculum: 'La méthode simpliste consistant à copier-coller un court texte plusieurs fois (« ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ») a l inconvénient de ne pas permettre une juste appréciation typographique du résultat final.',
     longPrez: 'Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d\'attente. Avantage de le mettre en latin est que un opérateur sait au premier coup d\'oeil que la page contenant ces lignes n\'est pas valide, et surtout l\'attention du client n\'est pas dérangée par le contenu, il demeure concentré seulement sur l\'aspect graphique.',
     firstPage: true,
     alignRight: false,

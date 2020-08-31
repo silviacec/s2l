@@ -1,30 +1,33 @@
 <template>
   <div class="contact">
     <div>
-  <span class="navbar__menu-item"><span data-menu-item-text="#découverte" class="navbar__menu-item-title">#Contact</span>
-    <span class="menu-item-hover-image" data-image-url="chat.jpg" style="
-                      background-image: url(chat.jpg);
-                    "></span>
-  </span>
-</div>
-    <Buttons></Buttons>
+      <span class="navbar__menu-item"><span data-menu-item-text="#découverte" class="navbar__menu-item-title">#Contact</span>
+        <span class="menu-item-hover-image" data-image-url="chat.jpg" style="
+                          background-image: url(chat.jpg);">
+        </span>
+      </span>
+    </div>
+    <Buttons>
+    </Buttons>
   </div>
+
 </template>
 
 <script>
-// @ is an alias to /src
 
-import Buttons from "@/components/Buttons.vue";
+  import Buttons from "@/components/Buttons.vue";
 
-export default {
-  name: "ContactPage",
-  components: {
-    Buttons
-  }
-};
+  export default {
+    name: "ContactPage",
+    
+    components: {
+      Buttons
+    }
+  };
+
 </script>
 
-<style media="screen">
+<style>
   .contact {
     background-color: #c9cdaa !important;
     padding: 100px;
@@ -41,16 +44,19 @@ export default {
     position: relative;
     cursor: pointer;
   }
+
   .navbar__menu-item-title {
     position: relative;
     color: transparent;
     -webkit-text-stroke: 0.01em white;
     transition: -webkit-text-stroke 0.5s ease, color 0.5s ease;
   }
+
   .navbar__menu-item:hover .navbar__menu-item-title {
     -webkit-text-stroke: none;
     color: white;
   }
+
   .navbar__menu-item-title::after {
     content: attr(data-menu-item-text);
     position: absolute;
@@ -64,6 +70,7 @@ export default {
     opacity: 0;
     transition: opacity 0.5s ease;
   }
+
   .menu-item-hover-image {
     width: 198px;
     height: 230px;
@@ -81,11 +88,14 @@ export default {
     pointer-events: none;
     z-index: 2;
   }
+
   .navbar__menu-item:hover .menu-item-hover-image {
     opacity: 1;
   }
+
   .navbar__menu-item:hover .navbar__menu-item-title::after {
     opacity: 1;
     z-index: 3;
   }
+
 </style>
