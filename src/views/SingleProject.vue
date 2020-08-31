@@ -93,29 +93,58 @@
                         </ul>
                     </div>
                 </div>
-            </div> -->
+              </div> -->
             </div>
           </div>
         </div>
       </div>
-    <div class="">
-      <Caroussel />
-    </div>
+      <div>
+        <b-carousel
+          id="carousel-1"
+          v-model="slide"
+          :interval="4000"
+          controls
+          indicators
+          background="#ababab"
+          img-width="1024"
+          img-height="480"
+          style="text-shadow: 1px 1px 2px #333;"
+          @sliding-start="onSlideStart"
+          @sliding-end="onSlideEnd"
+        >
+          <b-carousel-slide align-items-center :img-src="showPhoto1" >
+            <h1>{{projetSelectionne.shortPrez}}</h1>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </b-carousel-slide>
+          <b-carousel-slide  :img-src="showPhoto2">
+            <h1>{{projetSelectionne.tag1}}</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </b-carousel-slide>
+          <b-carousel-slide  :img-src="showPhoto3">
+            <h1>{{projetSelectionne.tag2}}</h1>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </b-carousel-slide>
+          <b-carousel-slide  :img-src="showPhoto4">
+            <h1>{{projetSelectionne.tag3}}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </b-carousel-slide>
+        </b-carousel>
+      </div>
   </div>
 </template>
 
 <script>
 
 // @ is an alias to /src
-import Caroussel from "@/components/Caroussel.vue";
+// import Caroussel from "@/components/Caroussel.vue";
 import {entreprises} from "../data.js";
 
 export default {
   name: "SingleProject",
 
-  components: {
-    Caroussel
-  },
+  // components: {
+  //   Caroussel
+  // },
 
   // components: {
   //   Project
@@ -123,6 +152,15 @@ export default {
   computed: {
   showPhoto1 () {
     return require('../assets/' + this.projetSelectionne.photo1)
+  },
+  showPhoto2 () {
+    return require('../assets/' + this.projetSelectionne.photo2)
+  },
+  showPhoto3 () {
+    return require('../assets/' + this.projetSelectionne.photo3)
+  },
+  showPhoto4 () {
+    return require('../assets/' + this.projetSelectionne.photo4)
   },
   showPhotoProfile () {
     return require('../assets/' + this.projetSelectionne.photo_profile)
@@ -149,7 +187,6 @@ export default {
 };
 
 </script>
-
 
 <style lang="css" scoped>
 
@@ -190,7 +227,7 @@ body .title h2 {
 body .ui {
   width: 900px;
   margin: 0 auto;
-  margin-top: 300px;
+  margin-top: 20vh;
   font-family: "Raleway", sans-serif;
   color: white;
   box-shadow: none;
@@ -617,162 +654,22 @@ footer span i {
     bottom: 0px;
   }
 }
-/* .wrapper{
-      width: 650px;
-      height: auto;
-      position: absolute;
-      top: 100%;
-      left: 30%;
-      transform: translate(-50%, -50%);
-      display: flex;
-}
 
-.wrapper ul li{
-      list-style: none;
-}
+#carousel-1{
+  width: 50%!important;
+  height: 60%!important;
+  display: inline-flex;
+  align-items: center;
+  margin: 20vh 0;
 
-.wrapper .profile{
-      width:400px;
-      margin-right: 25px;
 }
-
-.wrapper .profile .profile_img_info {
-      display: flex;
-      border-radius: 10px;
-      margin-bottom: 25px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
+h1{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2em;
 }
-
-.wrapper .profile .profile_img_info .img {
-      width: 125px;
-}
-
-.wrapper .profile .profile_img_info .img img{
-      display: block;
-      width: 100%;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-}
-
-.wrapper .profile .profile_img_info .info{
-      width: calc(100% - 125px);
-      padding: 40px;
-}
-
-.wrapper .profile .profile_img_info .info p.name{
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 5px;
-}
-
-.wrapper .profile .profile_img_info .info p.place{
-      font-weight: 300;
-}
-
-.wrapper .profile .profile_img_info .info p.place span{
-      margin-right: 5px;
-}
-
-.wrapper .profile .profile_skills{
-      margin-right: 5px;
-}
-
-.wrapper .profile .profile_skills{
-      border-radius: 10px;
-      padding: 25px;
-      box-shadow: 0 1px 2px ;
-      border-bottom: 1px solid #cccccc;
-}
-
-.wrapper .profile .profile_skills .skills p{
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 14px;
-      margin-bottom: 10px;
-}
-
-.wrapper .profile .profile_skills .skills ul li {
-      font-size: 11px;
-      margin-bottom: 5px;
-}
-
-.wrapper .profile .profile_skills .skills ul li .fab{
-      width: 40px;
-}
-
-.wrapper .profile .tags_wrap{
-      padding-top: 20px;
-}
-
-.wrapper .profile .tags_wrap span.tag{
-      padding: 10px 15px;
-      display: inline-block;
-      border-radius: 10px;
-      margin: 5px;
-      font-size: 14px;
-}
-
-.wrapper .profile_counts{
-      padding: 25px;
-      width: 175px;
-      border-radius: 10px;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.125);
-}
-
-.wrapper .profile_counts .profile_counts_wrap{
-      padding: 30px 0;
-      border-bottom: 1px solid #cccccc;
-}
-
-.wrapper .profile_counts .profile_counts_wrap:first-child{
-      padding-top: 0;
-}
-
-.wrapper .profile_counts .profile_counts_wrap:last-child{
-      padding-bottom: 0;
-      border-bottom: 0;
-}
-
-.wrapper .profile_counts .profile_counts_wrap .item{
-      padding: 20px 10px;
-      text-align: center;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-}
-
-.wrapper .profile_counts .profile_counts_wrap .item:hover{
-      background: #e4e9ef;
-}
-
-.wrapper .profile_counts .profile_counts_wrap .item .fas{
-      font-size: 30px;
-      margin-bottom: 20px;
-}
-
-.wrapper .profile_counts .profile_counts_wrap .item .title{
-      font-size: 11px;
-}
-
-.video-projet iframe{
-  margin-left: 37em;
-  margin-top: 20em;
-}
-
-@media screen and (max-width:864px){
-  .video-projet iframe{
-        margin-left: 30em;
-        margin-top: 50em;
-  }
-}
-
-.cv {
-  width: 700px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding: 5px;
-  background-color: #f9f634;
-  border-radius: 10px;
+p{
+  font-size: 1rem;
 }
 
 .vert {
@@ -786,6 +683,6 @@ footer span i {
 }
 .gris {
   background-color: rgb(224, 224, 224);
-} */
+}
 
 </style>
