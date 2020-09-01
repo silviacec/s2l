@@ -234,4 +234,9 @@
     display: none;
   }
 
+  @media screen and (max-width: 768px) {
+    .progress {
+      display: none;
+    }
+  }
 </style>

@@ -34,7 +34,7 @@
 
   export default {
     name: "Home",
-    
+
     components: {
       Project, Pitch, Steps, Title, Quote, Types
     },
@@ -50,7 +50,7 @@
 
   </script>
 
-  <style media="screen">
+  <style>
 
     .haut {
       background-image: url("../assets/bg3.jpg");

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="contact">
     <span class="navbar__menu-item">
       <span data-menu-item-text="#Discover" class="navbar__menu-item-title">#Contact</span>
@@ -144,5 +144,5 @@
   }
 
   [type="submit"]:hover { background:#CC4949; }
-  
-</style>
+
+</style> -->

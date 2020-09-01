@@ -31,7 +31,7 @@ export default {
   }
 
   footer {
-    width: 100%;
+    width: 100% !important;
     display: inline-block;
     height: 70px;
     background-color: #999;

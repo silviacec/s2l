@@ -1,5 +1,5 @@
-<template>
-  <div>
+<!-- <template>
+  <div class="carousel">
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -59,12 +59,11 @@
 
 <style lang="css" scoped>
 
-  #carousel-1 {
-    width: 50%!important;
-    height: 60%!important;
+  .carousel {
+    width: 5vw;
+    height: auto;
     display: inline-flex;
-    align-items: center;
-    margin: 20vh 0;
+    margin:auto;
   }
 
   h1 {
@@ -76,5 +75,12 @@
   p {
     font-size: 1rem;
   }
-  
-</style>
+
+  @media only screen and (max-width: 768px) {
+
+    .carousel {
+      margin: 0 0 0 0;
+      width: 100vh;
+    }
+  }
+</style> -->

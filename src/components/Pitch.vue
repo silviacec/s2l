@@ -42,5 +42,5 @@ export default {
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
-  
+
 </style>

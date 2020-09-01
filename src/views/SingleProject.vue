@@ -53,7 +53,7 @@
     <div class="container">
       <div class="post">
         <div class="header_post">
-          <img :src="showPhotoProfile" alt="" style="width: 700px; height: auto; margin: 25px; border-radius: 5px;">
+          <img :src="showPhotoProfile" alt="" style="width: 70vw; height: auto; margin: auto; border-radius: 5px;">
         </div>
         <div class="body_post">
           <div class="post_content">
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <div class="carousel">
       <b-carousel
         id="carousel-1"
         v-model="slide"
@@ -461,8 +461,8 @@
 
   /* pour la partie description de l'entrepreneur */
   .container {
-    width: 70em;
-    height: 100vh;
+    /* width: 70em;
+    height: 100vh; */
     /* background-color: pink; */
     /* display: flex; */
     justify-content: center;
@@ -471,7 +471,7 @@
 
   .container .post {
     width: 70em;
-    height: 500px;
+    height: 50vw;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -715,9 +715,30 @@
   .bleu {
     background-color: #bbd4f9;
   }
-  
+
   .gris {
     background-color: rgb(224, 224, 224);
   }
 
+  @media only screen and (max-width: 576px) {
+
+    .carousel {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+
+    body .ui {
+      display: block;
+      width: auto;
+    }
+  }
+
+  @media only  screen and (max-width: 768px) {
+    .container {
+      width: 100vw;
+      margin: 10vw 0;
+    }
+  }
 </style>

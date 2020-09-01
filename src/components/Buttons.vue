@@ -35,23 +35,37 @@ export default {
     justify-content: space-evenly;
   }
 
+  @media screen and (max-width: 768px) {
+    .crcl_container {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
   .crcl_bleu_1, .crcl_bleu_2 {
       vertical-align: middle;
       background: #dee1c4;
       border-radius: 10%;
-      width: 300px;
-      height: 200px;
+      width: 15em;
       line-height: 1em;
-      border: 2px solid #c1c4c4;
+      border: 2px solid #dee1c4;
       color: #3b3d69;
       text-align: center;
       font-size: 1.2em;
       margin: 20px 80px;
-      box-shadow: inset 5px 5px 12px 3px #fcfcfc;
+      box-shadow: 3px -3px 12px 3px #b3b29f;
+    }
+
+    @media screen and (max-width: 768px) {
+      .crcl_bleu_1, .crcl_bleu_2 {
+        font-size: 0.7em;
+        width:13em;
+      }
     }
 
     .crcl_bleu_1 h5 {
       margin-top: 50px;
+      /* font-size: 0.8em; */
     }
 
     .crcl_bleu_2 h5 {
@@ -60,7 +74,7 @@ export default {
 
     .ent {
       font-weight: bold;
-      color: #696d23;
+      color: #23566d;
       font-size: 1.5em;
     }
 
@@ -70,9 +84,15 @@ export default {
       font-size: 1.5em;
     }
 
+    @media screen and (max-width: 768px) {
+      .inv, .ent {
+        font-size: 0.7em;
+      }
+    }
+
     .ent:hover, .inv:hover {
       -webkit-text-stroke: none;
       color: white;
     }
-    
+
 </style>

@@ -6,10 +6,10 @@
       </div>
       <div class="nav-wrapper">
         <ul>
-          <li> <router-link to="/">Home</router-link> </li>
-          <li> <router-link to="/ProjectsPage">Projets</router-link> </li>
-          <li> <router-link to="/about">About</router-link>  </li>
-          <li> <router-link to="/ContactAccueil">Contact</router-link> </li>
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/ProjectsPage">Projets</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/ContactAccueil">Contact</router-link></li>
         </ul>
       </div>
     </nav>
@@ -29,14 +29,14 @@ export default {
 
   #nav {
     padding: 30px;
-    a {
+    /* a {
       font-weight: bold;
       color: #2c3e50;
 
       &.router-link-exact-active {
         color: #42b983;
       }
-    }
+    } */
   }
 
   *{
@@ -91,12 +91,27 @@ export default {
     font-weight: 600;
   }
 
-  @media screen and (max-width:864px){
+ @media screen and (max-width:576px){
     .logo {
           padding: 0;
         }
+        .nav-wrapper ul {
+              /* position: absolute; */
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+              padding-top: 8em;
+            }
 
-    .nav-wrapper {
+        .nav-wrapper ul li {
+              display: block;
+              float: none;
+              width: 100%;
+              text-align: left;
+              /* margin-bottom: 10px; */
+            }
+}
+    /*  .nav-wrapper {
           position: fixed;
           top: 0;
           left: 0;
@@ -108,20 +123,7 @@ export default {
           transition: all 0.2s ease;
         }
 
-    .nav-wrapper ul {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 100%;
-        }
 
-    .nav-wrapper ul li {
-          display: block;
-          float: none;
-          width: 100%;
-          text-align: right;
-          margin-bottom: 10px;
-        }
 
     .nav-wrapper ul li:nth-child(1) a {
           transition-delay: 0.2s;
@@ -178,7 +180,7 @@ export default {
     .nav-btn i:nth-child(3) {
           margin-top: 4px;
     }
-  }
+  } */
 
   #nav:checked + .nav-btn {
         transform: rotate(45deg);
@@ -211,7 +213,7 @@ export default {
         transform: translateX(0);
   }
 
-  .hidden{
+  .hidden {
         display: none;
   }
 
