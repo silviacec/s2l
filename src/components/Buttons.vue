@@ -33,6 +33,7 @@ export default {
   .crcl_container {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 7em;
   }
 
   @media screen and (max-width: 768px) {
@@ -52,7 +53,7 @@ export default {
       color: #3b3d69;
       text-align: center;
       font-size: 1.2em;
-      margin: 20px 80px;
+      margin: 1.25em 5em;
       box-shadow: 3px -3px 12px 3px #b3b29f;
     }
 

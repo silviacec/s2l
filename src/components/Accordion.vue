@@ -100,7 +100,7 @@ export default {
     display: inline-block;
   	position: relative;
   	width: 100%;
-  	min-height: 300px;
+  	min-height: 19em;
   	background-repeat: no-repeat;
   	background-position: center center;
   	text-align: center;
@@ -148,7 +148,7 @@ export default {
 
   .accordion ul li p {
   	font-family: 'Open Sans', sans-serif;
-  	font-size: 16px;
+  	font-size: 1em;
   	line-height: 24px;
   	font-weight: 300;
   	opacity: 1;
@@ -160,12 +160,12 @@ export default {
   @media screen and (min-width: 769px) {
     .accordion {
     	height: 100vh;
-    	min-height: 600px;
+    	min-height: 37em;
     	overflow: hidden;
     }
 
     .accordion ul {
-    	height: 600px;
+    	height: 37em;
     }
 
     .accordion ul li {
@@ -173,7 +173,7 @@ export default {
     	vertical-align: bottom;
     	width: 33%;
     	height: 100vh;
-    	min-height: 600px;
+    	min-height: 37em;
     	transition: all 500ms ease;
     }
 
@@ -208,7 +208,7 @@ export default {
 
     .accordion ul li p {
     	width: 30vw;
-    	height: 200px;
+    	height: 12px;
     	opacity: 0;
       margin-left: auto;
     	margin-right: auto;

@@ -34,10 +34,11 @@
 
   .main {
     margin-top: 20vh;
+    width: 100%;
   }
 
   .main h2 {
     margin: 2em 7em;
   }
-  
+
 </style>

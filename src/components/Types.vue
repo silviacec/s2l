@@ -64,4 +64,11 @@ export default {
     font-size: 0.9em;
   }
 
+@media only  screen and (max-width: 768px) {
+  .lestypes {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
 </style>

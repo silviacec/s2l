@@ -51,6 +51,9 @@
   </script>
 
   <style>
+    .home {
+      width: 100%;
+    }
 
     .haut {
       background-image: url("../assets/bg3.jpg");
