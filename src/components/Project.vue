@@ -126,19 +126,19 @@
   } */
 
   .vert {
-    background-color: #c1ffb0;
+    background-color: rgba(193, 255, 176, 0.77);
   }
 
   .rose {
-    background-color: rgb(247, 228, 228);
+    background-color: rgba(247, 228, 228, 0.85);
   }
 
   .bleu {
-    background-color: rgb(200, 221, 249, 1);
+    background-color: rgba(200, 221, 249, 0.77);
   }
 
   .gris {
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(224, 224, 224, 0.77);
   }
 
   @media only screen and (max-width: 992px) {
