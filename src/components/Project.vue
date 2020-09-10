@@ -80,7 +80,7 @@
     /* padding: 0; */
     list-style: none;
     padding: 1em 2em;
-    width: 80rem;
+    width: auto;
     margin: 2em 2em;
     background-color:#f5d951ed;
   }
