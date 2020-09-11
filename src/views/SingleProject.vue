@@ -511,7 +511,7 @@
 
   .container .post .body_post {
     width: 100%;
-    height: 60%;
+    height: auto;
     background: #fff;
     position: absolute;
     bottom: 0;
@@ -536,6 +536,10 @@
   .container .post .body_post .post_content h1 {
     font-size: 20px;
     font-weight: bold;
+  }
+
+  .post_content h1 {
+    margin-top: 2em;
   }
 
   .container .post .body_post .post_content p {
@@ -685,8 +689,7 @@
   }
 
   #carousel-1 {
-    width: 50%!important;
-    height: 60%!important;
+
     display: inline-flex;
     align-items: center;
     margin: 30vh 0 20vh 0;

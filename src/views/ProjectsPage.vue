@@ -1,7 +1,7 @@
 <template>
 
   <div class="main">
-    <h2>Tous les projets qu'on pu se réaliser grâce à vous !</h2>
+    <h2 class="titre-projets">Tous les projets qu'on pu se réaliser grâce à vous !</h2>
     <div class="projets" v-for="entreprise in entreprises" :key="entreprise.id">
       <Project :entreprise="entreprise"></Project>
     </div>
@@ -37,7 +37,7 @@
     width: 100%;
   }
 
-  .main h2 {
+  .titre-projets {
     margin: 2em 7em;
   }
 
