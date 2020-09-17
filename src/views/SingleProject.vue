@@ -165,6 +165,7 @@
   }
 
   @import url(https://fonts.googleapis.com/css?family=Raleway);
+
   body {
     background: radial-gradient(#fff, #C1C1C1);
     height: 120vh;
@@ -196,7 +197,7 @@
 
   body .ui {
     width: 900px;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 20vh;
     font-family: "Raleway", sans-serif;
     color: white;
@@ -464,7 +465,7 @@
     /* width: 70em;
     height: 100vh; */
     /* background-color: pink; */
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -473,7 +474,7 @@
     width: 70em;
     height: 50vw;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     flex-direction: column;
     position: relative;
   }
@@ -688,6 +689,11 @@
     }
   }
 
+  .carousel {
+    width: 80%;
+    margin: auto;
+  }
+
   #carousel-1 {
 
     display: inline-flex;
@@ -723,25 +729,44 @@
     background-color: rgb(224, 224, 224);
   }
 
-  @media only screen and (max-width: 576px) {
-
-    .carousel {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
 
     body .ui {
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
       width: auto;
+      justify-content: center;
     }
-  }
 
-  @media only  screen and (max-width: 768px) {
     .container {
       width: 100vw;
-      margin: 10vw 0;
+      margin: auto;
+      margin-top: 2em;
     }
+
+    .wrapper h2 {
+      text-align: center;
+      margin-top: 4em;
+      margin-bottom: 1em;
+    }
+
   }
+
+  @media only screen and (max-width: 576px) {
+
+    /* .carousel {
+      display: none;
+    } */
+
+    .wrapper h2 {
+      text-align: center;
+      /* margin-top: 2em;
+      margin-bottom: 0.5em; */
+    }
+
+  }
+
+  /* @media only  screen and (max-width: 768px) {
+
+  } */
 </style>
