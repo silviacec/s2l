@@ -5,10 +5,10 @@
       <div class='ui_box white'>
         <div class='ui_box__inner'>
           <h2>
-            Où en est la recolte de fonds pour ce projet ?
+            Où en est la recolte de fonds pour ce projet&nbsp;?
           </h2><br><br>
           <div class='stat'>
-            <span>58%</span>
+            <span>58&nbsp;%</span>
           </div>
           <div class='progress'>
             <div class='progress_bar'>
@@ -22,6 +22,7 @@
           </h2>
           <div class='stat_left'>
             <ul>
+              <li>TAGS&nbsp;:</li>
               <li>{{projetSelectionne.tag1}}
               </li>
               <li>{{projetSelectionne.tag2}}
@@ -40,10 +41,10 @@
       <div class='ui_box white'>
         <div class='ui_box__inner'>
           <div class='stat'>
-            <h5>Fonds nécessaires : <br> €{{projetSelectionne.needs}}</h5>
+            <h5>Fonds nécessaires&nbsp;:&nbsp;<br>{{projetSelectionne.needs}}&nbsp;€</h5>
           </div><br><br>
-          <p>Investissement possible : <br>{{projetSelectionne.participation}}</p>
-          <p>Rentabilité attendue : <br>{{projetSelectionne.rentability}}</p>
+          <p>Investissement possible&nbsp;:&nbsp;<br>{{projetSelectionne.participation}}&nbsp;€</p>
+          <p>Rentabilité attendue&nbsp;:&nbsp;<br>{{projetSelectionne.rentability}}&nbsp;€</p>
           <div class='progress'>
             <div class='progress_bar--two'></div>
           </div>
@@ -343,7 +344,7 @@
   }
 
   body .ui_box p {
-    font-size: 11px;
+    font-size: 0.8em;
     color: #B6B6B6;
     clear: left;
     font-weight: 300;
